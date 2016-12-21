@@ -24,6 +24,14 @@ h2:first-child {
 	margin-top: 60px;
 }
 
+.books-shelf .m-t-56 {
+	margin-top: 56px;
+}
+
+.books-shelf .m-t-38 {
+	margin-top: 38px;
+}
+
 #dynamic-to-top,
 #dynamic-to-top span, 
 .form-group, 
