@@ -427,6 +427,12 @@ textarea.form-control:focus {
 }
 
 @media (max-width:768px) {
+
+	.books-shelf .m-t-56,
+	.books-shelf .m-t-38 {
+		margin-top: 20px;
+	}
+
   h1 {
   	font-size: 1.2em;
     border-top: 1px #723B33 solid;
