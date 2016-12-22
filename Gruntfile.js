@@ -60,7 +60,7 @@ module.exports=function(grunt){
 					imageAlpha:true,
 					quitAfter:true
 				},
-				src:['img']
+				src:['images']
 			}
 		},
 		cssmin:{
