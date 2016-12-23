@@ -215,6 +215,15 @@ video {
 	overflow: hidden;
 }
 
+/* centering slider elements*/
+
+.modal.in .modal-dialog {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
 .modal-header {
   background-color: #AE5E53;
 }
