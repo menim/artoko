@@ -24,6 +24,10 @@ h2:first-child {
 	margin-top: 60px;
 }
 
+h3 {
+	font-size: 18px;
+}
+
 .books-shelf .m-t-56 {
 	margin-top: 56px;
 }
@@ -488,6 +492,10 @@ textarea.form-control:focus {
   .navbar-nav>li>a {
     padding: 15px 7px;
 	}
+
+	h3 {
+		font-size: 20px;
+	}
 }
 
 @media (max-width:992px) {
@@ -498,6 +506,7 @@ textarea.form-control:focus {
   .btn-primary {
   	width: 40%;
   }
+
 }
 
 @media (min-width:992px) {
@@ -518,6 +527,10 @@ textarea.form-control:focus {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     top: 50%;
+  }
+
+  h3 {
+  	font-size: 24px
   }
 }
 
