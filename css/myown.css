@@ -87,6 +87,11 @@ a {
   font-size: 13px;
 }
 
+a[href^="#myModal"] {
+	display: inline-block;
+	position: relative;
+}
+
 .fullscreen {
   width: 80%;
   margin: 0 auto;
@@ -132,6 +137,17 @@ nav {
 
 .navbar-default .navbar-toggle:hover {
   background-color: #fff;
+}
+
+.with-icon:before {
+	content: '';
+	width: 50px;
+	height: 50px;
+	background-image:url('../images/new.svg');
+	position: absolute;
+	top: -20px;
+	right: -25px;
+	z-index: 1;
 }
 
 .books-shelf {
