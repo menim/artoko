@@ -467,7 +467,7 @@ textarea.form-control:focus {
 	}
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
 
 	.books-shelf .m-t-56,
 	.books-shelf .m-t-38 {
@@ -479,24 +479,6 @@ textarea.form-control:focus {
     border-top: 1px #723B33 solid;
     border-bottom: 1px #723B33 solid;
     padding: 10px 0;
-	}
-	
-	.artnote_innovations {
-    font-size: 1.1em;
-    text-align: center;
-    padding: 25px;
-    line-height: normal;
-	}
-	
-	.artnote_specifications {
-    font-size: 1.1em;
-	}
-
-	.artnote_features span {
-    padding: 7px 0;
-    display: block;
-    line-height: normal;
-    font-size: 1.1em;
 	}
 	
 	.btn-primary {
