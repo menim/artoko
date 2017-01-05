@@ -25,7 +25,7 @@ module.exports=function(grunt){
 			}
 		},
 		jshint:{
-			files:['Gruntfile.js','js/*.js'],
+			files:['js/myown.js'],
 			options:{
 				globals:
 				{

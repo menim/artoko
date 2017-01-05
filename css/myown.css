@@ -26,6 +26,7 @@ h2:first-child {
 
 h3 {
 	font-size: 18px;
+  margin-top: 10px;
 }
 
 .books-shelf .m-t-56 {
@@ -37,7 +38,7 @@ h3 {
 }
 
 #dynamic-to-top,
-#dynamic-to-top span, 
+.arrow-up, 
 .form-group, 
 .modal-body, 
 nav {
@@ -73,10 +74,6 @@ section {
 
 ul {
   list-style-type: none;
-}
-
-h3 {
-  margin-top: 10px;
 }
 
 a {
@@ -314,11 +311,13 @@ footer {
   border-radius: 0;
 }
 
-#dynamic-to-top span {
+.arrow-up {
   display: block;
-  width: 14px;
-  height: 12px;
-  background: url(../img/up.png) center center no-repeat;
+  width: 0; 
+  height: 0; 
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #fff;
 }
 
 .contacts {
@@ -397,21 +396,10 @@ textarea {
     clear: both;
 }
 
-input, 
-textarea {
-  resize: none;
-  overflow: auto;
-  box-sizing: border-box;
-}
-
 .has-error input, 
 .has-error textarea {
   color: #e74c3c;
   border-color: #e74c3c;
-}
-
-.has-error .input-field-icon {
-  color: #e74c3c;
 }
 
 .has-success input,
@@ -420,16 +408,11 @@ textarea {
   border-color: #2ecc71;
 }
 
-.has-success .input-field-icon {
-  color: #2ecc71;
-}
-
 input:focus, 
 textarea:focus {
   border-color: #48c9b0;
-  color: #34495e;
+  color: #fff;
 }
-
 
 textarea.form-control {
   height: 120px;
@@ -536,4 +519,4 @@ textarea.form-control:focus {
   section .nav li {
     float: none;
 	}
-}`
+}

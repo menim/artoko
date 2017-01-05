@@ -1839,7 +1839,8 @@
           </li>
           <li class="video-tabs">
             <a href="#tab9" data-toggle="tab">
-              <img class="prev-float" src="images/rus_let.png" width="80" height="45" alt="" />
+              <!--<img class="prev-float" src="images/rus_let.png" width="80" height="45" alt="" />-->
+              <div class="s" style="width: 80px;height: 45px;background-color: #000"></div>
               <p id="video_title3">
                 Електронний підручник російської літератури для п'ятого класу
               </p>
@@ -2255,15 +2256,16 @@
         <div class="col-sm-6 col-sm-offset-2">
           <form action="contact.php" method="post" class="form">
             <div class="form-group left">
-              <input type="text" class="form-control" name="field-name" value="" placeholder="Ім'я" id="contact-name" />
+              <input type="text" class="form-control" name="field-name" value="" placeholder="Ім'я" id="contact-name" required/>
               <label class="input-field-icon icon-user" for="contact-name"></label>
             </div>
             <div class="form-group  right">
-              <input type="email" name="field-email" class="form-control" value="" placeholder="Email" id="contact-email" />
+              <input type="email" name="field-email" class="form-control" value="" placeholder="Email" id="contact-email" required />
               <label class="input-field-icon icon-email" for="contact-email"></label>
             </div>
             <div class="form-group clearfix">
-              <textarea class="form-control" name="field-message" placeholder="Повідомлення" id="contact-message" rows="1"></textarea>
+              <textarea class="form-control" name="field-message" placeholder="Повідомлення" id="contact-message" rows="1" required></textarea>
+              <label for="contact-message"></label>
             </div>
             <button type="submit" id="contact-send" class="btn btn-primary btn-lg btn-block">Відправити</button>
           </form>
@@ -2274,18 +2276,18 @@
       © Artoko publishing 2016
     </p> 
   </footer>
-  <a href="#" id="dynamic-to-top">
-    <span>&nbsp;</span> 
+  <a href="#"  id="dynamic-to-top">
+    <span class="arrow-up">&nbsp;</span> 
   </a>
 
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-76538068-1', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-76538068-1', 'auto');
+    ga('send', 'pageview');
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-1.11.3.min.js"><\/script>')</script>		
