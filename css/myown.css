@@ -232,6 +232,36 @@ video {
 	overflow: hidden;
 }
 
+.video-tabs-icons {
+  background-image: url('../images/video-tabs-icons.png');
+  background-repeat: no-repeat;
+  display: block;
+  width: 80px;
+  height: 45px;
+  float: left;
+  margin: auto 10px auto 0;
+}
+
+.ukrhistory-tab {
+  background-position: -5px -115px;
+}
+
+.rusliterature-tab {
+  background-position: -95px -60px;
+}
+
+.augreality-tab {
+  background-position: -5px -5px;
+}
+
+.rusliterature5-tab {
+  background-position: -95px -5px;
+}
+
+.armenianmemory-tab {
+  background-position: -5px -60px;
+}
+
 /* centering slider elements*/
 
 .modal {
