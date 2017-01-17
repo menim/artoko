@@ -6,8 +6,8 @@ module.exports=function(grunt){
         separator:';'
       },
       dist: {
-        src:['js/myown.js'],
-        dest:'dist/myown.min.js'
+        src:['js/jquery-1.11.3.min.js','js/bootstrap.min.js','js/jquery.scrollTo.min.js','js/lazysizes.min.js','js/myown.js'],
+        dest:'dist/myown.js'
       }
     },
     uncss: {
@@ -20,7 +20,7 @@ module.exports=function(grunt){
     uglify: {
       my_target: {
         files:{
-          'dist/myown.js':['js/myown.js']
+          'dist/myown.js':['dist/myown.js']
         }
       }
     },
@@ -66,7 +66,7 @@ module.exports=function(grunt){
       target: {
         files: [
           {
-            src:'css/myown.css',
+            src:'dist/myown.css',
             dest:'dist/myown.css'
           }
         ]
@@ -76,7 +76,7 @@ module.exports=function(grunt){
       options: {
       },
       all: {
-        src: ["css/*.css"],
+        src: ["css/bootstrap.min.css","css/font-awesome.min.css","css/myown.css"],
         dest:"dist/myown.css"
       }
     },
