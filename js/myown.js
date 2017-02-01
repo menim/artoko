@@ -6,6 +6,12 @@
     interval: false
   }); 
 
+                /* LazyLoading*/
+
+$('.lazy').Lazy({
+  effect: 'fadeIn'
+});
+
                         /* Scroll to usage */
                         
   $('#dynamic-to-top').hide();    

@@ -6,7 +6,7 @@ module.exports=function(grunt){
         separator:';'
       },
       dist: {
-        src:['js/jquery-1.11.3.min.js','js/bootstrap.min.js','js/jquery.scrollTo.min.js','js/lazysizes.min.js','js/myown.js'],
+        src:['js/jquery-1.11.3.min.js','js/bootstrap.min.js','js/jquery.scrollTo.min.js','js/jquery.lazy.min.js','js/myown.js'],
         dest:'dist/myown.js'
       }
     },
