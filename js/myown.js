@@ -4,17 +4,11 @@
 
   $('.carousel').carousel({
     interval: false
-  }); 
-
-                /* LazyLoading*/
-
-$('.lazy').Lazy({
-  effect: 'fadeIn'
-});
+  });
 
                         /* Scroll to usage */
                         
-  $('#dynamic-to-top').hide();    
+  $('#dynamic-to-top').hide();
         
                        // fade in #back-top
         
