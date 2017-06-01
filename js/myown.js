@@ -65,8 +65,10 @@
 
   function validateName() {
     var a = $("#contact-name"),
-        b = a.val().trim();
-        b.length < 2 ? (a.parent().removeClass("has-success").addClass("has-error"), nameSuccess = !1) : (a.parent().removeClass("has-error").addClass("has-success"), nameSuccess = !0);
+        b = a.val().trim(),
+        c = new RegExp(/^[а-яА-яіІЇїЄєґҐёЁA-Za-z]+$/),
+        d = c.test(b);
+        !d ? (a.parent().removeClass("has-success").addClass("has-error"), nameSuccess = !1) : (a.parent().removeClass("has-error").addClass("has-success"), nameSuccess = !0);
 	}
 
 	function validateEmail() {

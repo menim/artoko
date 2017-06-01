@@ -3,8 +3,8 @@ $name=strip_tags($_POST['field-name']);
 $email=strip_tags($_POST['field-email']);
 $messageText=strip_tags($_POST['field-message']);
 
-$to='mel198629@gmail.com, mail@okobook.com';
-$subject='Заказы с сайта';
+$to='mel198629@gmail.com';
+$subject='Заказы с сайта ArtOko';
 
 $message ="<html><head><title>Сообщение с сайта sketchbooky.info</title></head><body> 
        		<table cellpadding='0' cellspacing='0'>
