@@ -569,3 +569,8 @@ textarea.form-control:focus {
     float: none;
 	}
 }
+
+.antispam {
+  display: none;
+  visibility: hidden;
+}

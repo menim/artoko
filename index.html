@@ -11,7 +11,7 @@
       <meta name="description" content="Издательство Око. Заказ книг, скетчбуков, дудлбуков, календарей.">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Latest compiled and minified CSS -->
-		  <link rel="stylesheet" href="dist/myown.css" />
+		  <link rel="stylesheet" href="css/myown.css" />
 
 		<!-- Optional theme
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">-->
@@ -2600,7 +2600,7 @@
         <div class="col-sm-6 col-sm-offset-2">
           <form action="contact.php" method="post" class="form">
             <div class="form-group left">
-              <input type="text" class="form-control" name="field-name" value="" placeholder="Ім'я" id="contact-name" required/>
+              <input type="text" class="form-control" name="field-name" value="" placeholder="Ім'я" id="contact-name" required />
               <label class="input-field-icon icon-user access-visible" for="contact-name">Ім'я</label>
             </div>
             <div class="form-group  right">
@@ -2611,6 +2611,7 @@
               <textarea class="form-control" name="field-message" placeholder="Повідомлення" id="contact-message" rows="1" required></textarea>
               <label for="contact-message" class="access-visible">Повідомлення</label>
             </div>
+            <p class="antispam">Leave this empty: <input type="text" name="url" /></p>
             <button type="submit" id="contact-send" class="btn btn-primary btn-lg btn-block">Відправити</button>
           </form>
         </div>
@@ -2636,9 +2637,9 @@
   </script>
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-1.11.3.min.js"><\/script>')</script>		
-  <!--<script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.scrollTo.min.js"></script>
-  <script src="js/lazyload blur-upsizes.min.js" async=""></script>-->
-  <script src="dist/myown.js"></script>
+  <script src="js/lazysizes.min.js" async=""></script>-->
+  <script src="js/myown.js"></script>
 </body>
 </html>
