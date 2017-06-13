@@ -21,7 +21,7 @@ $message ="<html><head><title>Сообщение с сайта sketchbooky.info<
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";           
 
-if(isset($_POST['url']) && $_POST['url'] == ''){      
+if(/*isset($_POST['field-message'])!== ''  && */preg_match("/^[а-яА-яіІЇїЄєґҐёЁA-Za-z]+$/", $_POST['field-name'])){      
 	mail($to,$subject,$message,$headers);
 }
 header('Location: index.html');
