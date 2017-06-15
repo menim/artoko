@@ -68,7 +68,7 @@
     $.scrollTo('#scrollto4',1000,{offset: -60});
   });
 
-  $('.card-link').click(function(e){
+  $('.card_link').click(function(e){
     e.preventDefault();
     $.scrollTo('#scrollto5',1000,{offset: -60});
   });
@@ -81,6 +81,11 @@
   $('.doodlebook_link').click(function(e){
     e.preventDefault();
     $.scrollTo('#scrollto6',1000,{offset: -60});
+  });
+
+  $('.video_views').click(function(e){
+    e.preventDefault();
+    $.scrollTo('#scrollto8',1000,{offset: -60});
   });
 
 
