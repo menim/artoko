@@ -6,11 +6,32 @@
     interval: false
   });
 
-                        /* Scroll to usage */
+
+          /* INIT slick slider */
+
+  $('.single-item').slick({
+    slidesToShow: 4,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+         slidesToShow: 2
+       }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1
+        }
+       }
+    ]
+});            
+
+                /* Scroll to usage */
                         
   $('#dynamic-to-top').hide();
         
-                       // fade in #back-top
+                // fade in #back-top
         
   $(function () {
     $(window).scroll(function () {
