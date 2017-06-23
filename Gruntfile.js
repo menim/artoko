@@ -10,13 +10,6 @@ module.exports=function(grunt){
         dest:'dist/myown.js'
       }
     },
-    uncss: {
-      dist:{
-        files:[
-          { src:'index.html',dest:'dist/myown.css'}
-        ]
-      }
-    },
     uglify: {
       my_target: {
         files:{
@@ -80,37 +73,14 @@ module.exports=function(grunt){
         dest:"dist/myown.css"
       }
     },
-    postcss: {
+    autoprefixer: {
       options: {
-        map: {
-          inline: false,
-        },
-
-        processors: [
-          require('autoprefixer')([
-            "Android 2.3",
-            "Android >= 4",
-            "Chrome >= 20",
-            "Firefox >= 3",
-            "Explorer 9",
-            "iOS >= 6",
-            "Opera >= 8",
-            "Safari >= 6"
-          ])
-        /*require('cssgrace'),*/
-        ]
-      },
-      dist: {
-        src: 'css/myown.css'
-      }
+      browsers: ['last 2 versions', 'ie 8', 'ie 9']
     },
-    uncss: {
-      dist: {
-        files: {
-          'dist/myown.css':['index.html']
-        }
-      }
-    },
+    dist: {
+      src: 'css/myown.css'
+    }
+  },
     watch: {
       files: ['index.html','css/*.css','js/*.js'],
       tasks: []
@@ -148,11 +118,8 @@ module.exports=function(grunt){
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-csslint');
-  grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-html');
-  grunt.loadNpmTasks('grunt-tenon-client');
   grunt.loadNpmTasks('grunt-stylelint');
-
-  grunt.registerTask('default', ['browserSync', 'watch']);
-  grunt.registerTask('ondev', ['postcss','cssmin','htmlmin','uglify']);
+  grunt.registerTask('ondev', ['htmlmin','autoprefixer','concat_css','cssmin','concat','uglify']);
 };
