@@ -1,11 +1,11 @@
-body, 
+body,
 ul {
   margin: 0;
 }
 
 /*  this not accessble from keyboard fixed when will find answer */
-a, 
-a:focus, 
+a,
+a:focus,
 a:hover {
   outline-style: none;
 }
@@ -76,9 +76,6 @@ ul {
 }
 
 a {
-  -webkit-transition: color .3s ease-in;
-  -moz-transition: color .3s ease-in;
-  -o-transition: color .3s ease-in;
   transition: color .3s ease-in;
   font-size: 13px;
 }
@@ -105,22 +102,14 @@ a[href^="#myModal"] {
 }
 
 .navbar {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   border: 0;
 }
 
 nav {
   border: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   background-color: #723b33;
-  background-image: -moz-linear-gradient(top, #723b33, #723b33);
-  background-image: -webkit-linear-gradient(top, #723b33, #723b33);
-  background-image: -o-linear-gradient(top, #723b33, #723b33);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#723b33), to(#723b33));
   background-image: linear-gradient(top, #723b33, #723b33);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#723b33',  endColorstr='#723b33',  GradientType=0);
 }
@@ -167,42 +156,30 @@ nav {
 }
 
 .books-shelf a img {
-  -moz-transition: transform .3s linear, 
-  								 -moz-transform .3s linear;
-  -o-transition: transform .3s linear,
-  							 -o-transform .3s linear;
   transition: transform .3s linear;
-  transition: transform .3s linear,
-  						-webkit-transform .3s linear,
-  						-moz-transform .3s linear,
-  						-o-transform .3s linear;
   -webkit-transition: transform .3s linear;
 }
 
 .books-shelf a:hover img {
-  -webkit-transform: scale(1.04);
-  -moz-transform: scale(1.04);
   -ms-transform: scale(1.04);
-  -o-transform: scale(1.04);
   transform: scale(1.04);
 }
               
               /* visible effect for lazyloading images  */
 
 .blur-up {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-  transition: filter 400ms, -webkit-filter 400ms;
+  filter: blur(5px);
+  transition: filter 400ms;
 }
 
 .blur-up.lazyloaded {
-  -webkit-filter: blur(0);
-          filter: blur(0);
+  filter: blur(0);
 }
 
           /* Video youtube styles */
 
-.youtube-item {
+.youtube-item,
+.resp-img {
   width: 100%;
 }
 
@@ -238,7 +215,8 @@ nav {
   width: 10px;
   height: 10px;
   background-color: transparent;
-  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 
 .slick-prev {
@@ -246,7 +224,8 @@ nav {
 }
 
 .slick-prev:before {
-  transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+      transform: rotate(-135deg);
 }
 
 .slick-prev:hover:before,
@@ -416,8 +395,6 @@ footer {
   padding: 20px;
   border: 1px solid #fff;
   background: #723b33;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
 }
 
@@ -601,9 +578,7 @@ textarea.form-control:focus {
 	.fixHeight>a {
     display: block;
     position: relative;
-    -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     top: 50%;
@@ -618,4 +593,13 @@ textarea.form-control:focus {
   section .nav li {
     float: none;
 	}
+}
+
+@media(min-width: 320px) and (max-width: 500px){
+  .with-icon:before{
+    width: 40px;
+    height: 40px;
+    top: -15px;
+    right: -10px;
+  }
 }
