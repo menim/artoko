@@ -94,7 +94,7 @@ module.exports=function(grunt){
         },
         options: {
           watchTask: true,
-          server: './../artoko.org'
+          server: './'
         }
       }
     },
@@ -121,5 +121,6 @@ module.exports=function(grunt){
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-html');
   grunt.loadNpmTasks('grunt-stylelint');
-  grunt.registerTask('ondev', ['htmlmin','autoprefixer','concat_css','cssmin','concat','uglify']);
+  grunt.registerTask('ondev',['browserSync', 'watch']);
+  grunt.registerTask('onprod', ['htmlmin','autoprefixer','concat_css','cssmin','concat','uglify']);
 };
