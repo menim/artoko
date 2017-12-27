@@ -532,29 +532,7 @@ textarea.form-control:focus {
   background-color: #561f17;
 }
 
-
-
-@media (max-width:767px) {
-
-	.books-shelf .m-t-56,
-	.books-shelf .m-t-38 {
-		margin-top: 20px;
-	}
-
-  h1 {
-  	font-size: 1.2em;
-    border-top: 1px #723B33 solid;
-    border-bottom: 1px #723B33 solid;
-    padding: 10px 0;
-	}
-	
-}
-
 @media (min-width:768px) {
-  .navbar-nav>li>a {
-    padding: 15px 7px;
-	}
-
 	h3 {
 		font-size: 20px;
 	}
@@ -564,6 +542,35 @@ textarea.form-control:focus {
   .fullscreen {
     width: 100%
  	}
+
+  .navbar-nav>li>a{
+    font-size: .8em;
+    padding-right: 12px;
+    padding-left: 0;
+  }
+
+  .nav-tabs>li {
+    float: none;
+  }
+}
+
+@media (max-width:767px) {
+
+  .books-shelf .m-t-56,
+  .books-shelf .m-t-38 {
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    border-top: 1px #723B33 solid;
+    border-bottom: 1px #723B33 solid;
+    padding: 10px 0;
+  }
+
+  .navbar-nav>li>a {
+    padding-left: 10px;
+  }
 }
 
 @media (min-width:992px) {
