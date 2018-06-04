@@ -7,13 +7,13 @@ module.exports=function(grunt){
       },
       dist: {
         src:['js/jquery-1.11.3.min.js','js/bootstrap.min.js','js/jquery.scrollTo.min.js','js/lazysizes.min.js','js/slick.js','js/myown.js'],
-        dest:'dist/myown.js'
+        dest:'dist/js/myown.js'
       }
     },
     uglify: {
       my_target: {
         files:{
-          'dist/myown.js':['dist/myown.js']
+          'dist/js/myown.js':['dist/js/myown.js']
         }
       }
     },
@@ -59,8 +59,8 @@ module.exports=function(grunt){
       target: {
         files: [
           {
-            src:'dist/myown.css',
-            dest:'dist/myown.css'
+            src:'dist/css/myown.css',
+            dest:'dist/css/myown.css'
           }
         ]
       }
@@ -69,13 +69,13 @@ module.exports=function(grunt){
       options: {
       },
       all: {
-        src: ["css/bootstrap.min.css","css/font-awesome.min.css","css/slick.css","css/myown.css"],
-        dest:"dist/myown.css"
+        src: ["css/bootstrap-reboot.min.css","css/bootstrap.min.css","css/font-awesome.min.css","css/slick.css","css/myown.css"],
+        dest:"dist/css/myown.css"
       }
     },
     autoprefixer: {
       options: {
-      browsers: ['last 2 versions', 'ie 8', 'ie 9']
+      browsers: ['last 5 versions', 'ie 8', 'ie 9']
     },
     dist: {
       src: 'css/myown.css'
@@ -122,5 +122,5 @@ module.exports=function(grunt){
   grunt.loadNpmTasks('grunt-html');
   grunt.loadNpmTasks('grunt-stylelint');
   grunt.registerTask('ondev',['browserSync', 'watch']);
-  grunt.registerTask('onprod', ['htmlmin','autoprefixer','concat_css','cssmin','concat','uglify']);
+  grunt.registerTask('onprod', ['autoprefixer','concat_css','cssmin','concat']);
 };
