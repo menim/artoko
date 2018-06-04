@@ -7,7 +7,7 @@ ul {
 a,
 a:focus,
 a:hover {
-  outline-style: 1px dotted blue;
+  outline: 1px dotted blue;
 }
 
 h2:first-child {
@@ -66,8 +66,13 @@ ul {
 }
 
 a {
-  transition: color .3s ease-in;
   font-size: 13px;
+  transition: color .3s ease-in;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
 }
 
 a[href^="#myModal"] {
@@ -81,9 +86,9 @@ a[href^="#myModal"] {
   clip: rect(1px, 1px, 1px, 1px);   
 }
 
-.fullscreen {
-  width: 80%;
-  margin: 0 auto;
+.responsive-img-bt {
+  width: 100%;
+  height: 100%;
 }
 
 .carousel {
@@ -151,23 +156,38 @@ a[href^="#myModal"] {
 
 .books-shelf a img {
   transition: transform .3s linear;
-  -webkit-transition: transform .3s linear;
+  -webkit-transition: -webkit-transform .3s linear;
 }
 
 .books-shelf a:hover img {
   -ms-transform: scale(1.04);
-  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+.price {
+  color: #723B33;
+  display: block;
+  font-size: 20px;
+  padding-top: .5em;
+}
+
+.price:hover,
+.price:focus {
+  color: #723B33;
 }
               
               /* visible effect for lazyloading images  */
 
 .blur-up {
-  filter: blur(5px);
-  transition: filter 400ms;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  transition: -webkit-filter 400ms, filter 400ms;
 }
 
 .blur-up.lazyloaded {
-  filter: blur(0);
+  -webkit-filter: blur(0);
+          filter: blur(0);
 }
 
           /* Video youtube styles */
@@ -210,7 +230,8 @@ a[href^="#myModal"] {
   height: 10px;
   background-color: transparent;
   -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .slick-prev {
@@ -219,7 +240,8 @@ a[href^="#myModal"] {
 
 .slick-prev:before {
   -ms-transform: rotate(-135deg);
-      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 
 .slick-prev:hover:before,
@@ -405,7 +427,7 @@ footer {
 
 @media (min-width: 992px) {
   .delivery {
-    padding: 0 9em;
+    padding: 0 3em;
   }
 
   .delivery-paragraph {
@@ -429,6 +451,7 @@ footer {
 .btn-primary {
   border: #48c9b0;
   background-color: #48c9b0;
+  cursor: pointer;
   -webkit-font-smoothing: subpixel-antialiased;
   transition: all .5s;
   font-size: 17px;

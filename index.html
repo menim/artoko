@@ -14,6 +14,9 @@
       <link rel="stylesheet" href="css/myown.css" /> 
     </head>
 <body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">Вы используете <strong>устарелый</strong> браузер. Пожалуйста <a href="https://browsehappy.com/">обновите ваш браузер</a> для повышения удобства и безопасности.</p>
+    <![endif]-->
   <header>
 		<nav class="navbar navbar-toggleable-md fixed-top navbar-custom">
       <a class="navbar-brand" href="#">
@@ -24,25 +27,25 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="nav navbar-nav">
-          <li class="nav-item">
+          <li class="nav-carousel-item">
             <a class="nav-link travelbook_link" href="#">Travelbook</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-carousel-item">
             <a class="nav-link sketchbook_link" href="#">Sketchbook</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-carousel-item">
             <a class="nav-link doodlebook_link" href="#">Doodlebook</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-carousel-item">
             <a class="nav-link artnote_link" href="#">Арт-бук</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-carousel-item">
             <a class="nav-link card_link" href="#">Книга листівка</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-carousel-item">
             <a class="nav-link video_views" href="#">Відеоогляди</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-carousel-item">
             <a class="nav-link delivery" href="#">Оплата і доставка</a>
           </li>
         </ul>
@@ -58,52 +61,53 @@
             <a href="#myModal44" role="button" data-toggle="modal" class="with-icon">
               <img class="lazyload blur-up resp-img" src="images/mdqip.png" data-src="images/cities-of-world-cover-ua.png" alt="Travelbook. Книга єскізів. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">200 грн</span>
             </a>
             <div class="modal" id="myModal44">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content"> 
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h3 id="myModalLabel44">Travelbook. Книга єскізів. Міста світу.</h3>
+                    <h3 class="modal-title" id="myModalLabel44">Travelbook. Книга єскізів. Міста світу.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel44" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel44" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world6-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world6-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world7-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world7-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world8-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world8-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world9-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world9-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world10-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world10-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -120,56 +124,57 @@
             <a href="#myModal43" role="button" data-toggle="modal" class="with-icon">
               <img class="lazyload blur-up resp-img" src="images/mdqip.png" data-src="images/cities-of-world-cover-ru.png" alt="Travelbook. Книга эскизов. Города Мира. Обложка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">200 грн</span>
             </a>
             <div class="modal" id="myModal43">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content"> 
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel43">Travelbook. Книга эскизов. Города Мира.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel43" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel43" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world1-ru.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world1-ru.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world2-ru.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world2-ru.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world3-ru.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world3-ru.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world4-ru.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world4-ru.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world5-ru.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world5-ru.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world6-ru.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world6-ru.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world7-ru.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world7-ru.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world8-ru.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world8-ru.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>                      
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world9-ru.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world9-ru.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>                      
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/cities-of-world10-ru.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/cities-of-world10-ru.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -193,36 +198,37 @@
             <a href="#myModal42" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/fantastic-beasts-cover-ua.png" alt="Sketchbook. Малюємо фантастичних істот. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal42">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content"> 
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h3 id="myModalLabel42">Sketchbook. Малюємо фантастичних істот.</h3>
+                      <h3 id="myModalLabel42">Sketchbook. Малюємо фантастичних істот.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel42" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel42" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/fantastic-beasts1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/fantastic-beasts1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/fantastic-beasts2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/fantastic-beasts2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/fantastic-beasts3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/fantastic-beasts3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/fantastic-beasts4-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/fantastic-beasts4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/fantastic-beasts5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt"  src="images/lqip.png" data-src="images/fantastic-beasts5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -239,36 +245,37 @@
             <a href="#myModal43" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/fantastic-beasts-cover-ru.png" alt="Sketchbook. Рисуем фантастических существ. Обложка. Русская версия." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>   
             <div class="modal" id="myModal43">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content"> 
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <div class="modal-header">                  
                     <h3 id="myModalLabel43">Sketchbook. Рисуем фантастических существ.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel43" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel43" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/fantastic-beasts1-ru.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/fantastic-beasts1-ru.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/fantastic-beasts2-ru.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/fantastic-beasts2-ru.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/fantastic-beasts3-ru.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/fantastic-beasts3-ru.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/fantastic-beasts4-ru.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/fantastic-beasts4-ru.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/fantastic-beasts5-ru.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/fantastic-beasts5-ru.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -284,36 +291,37 @@
           <li class="col-12 col-md-4 col-lg-3"> 
             <a href="#myModal1" role="button" data-toggle="modal">
               <img src="images/draw-beautiful-font-cover-ua.png" alt="Малюємо красиві літери. Обкладинка скетчбук." />
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal1">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel1">Sketchbook. Малюємо красиві літери.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel1" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-beautiful-font1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-beautiful-font1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-beautiful-font2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-beautiful-font2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img  class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-beautiful-font3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img  class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-beautiful-font3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-beautiful-font4-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-beautiful-font4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-beautiful-font5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-beautiful-font5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -329,36 +337,37 @@
           <li class="col-12 col-md-4 col-lg-3">  
             <a href="#myModal2" role="button" data-toggle="modal">
               <img src="images/draw-comics-cover-ua.png" alt="Малюємо комікс. Обкладинка скетчбук." />
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal2">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h3 id="myModalLabel2">Sketchbook. Малюємо комікс.</h3>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel2" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-comics1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-comics1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-comics2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-comics2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img  class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-comics3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img  class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-comics3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-comics4-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-comics4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-comics5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-comics5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
     
@@ -375,36 +384,37 @@
           <li class="col-12 col-md-4 col-lg-3">  
             <a href="#myModal3" role="button" data-toggle="modal">
               <img src="images/draw-flowers-cover-ua.png" alt="Малюємо квіти. Обкладинка скетчбук." />
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal3">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel3">Sketchbook. Малюємо квіти.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel3" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-flowers1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-flowers1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-flowers2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-flowers2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-flowers3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-flowers3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-flowers4-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-flowers4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-flowers5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-flowers5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -420,36 +430,37 @@
           <li class="col-12 col-md-4 col-lg-3"">  
             <a href="#myModal4" role="button" data-toggle="modal">
               <img src="images/draw-sea-cover-ua.png" alt="Малюємо море. Обкладинка скетчбук." />
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal4">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content"> 
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel4">Sketchbook. Малюємо море.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel4" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-sea1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-sea1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-sea2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-sea2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-sea3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-sea3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-sea4-ua.png"  alt="" />
+                        <div class="carousel-item"> 
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-sea4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-sea5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-sea5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -466,36 +477,37 @@
             <a href="#myModal5" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/basic-level-cover-ua.png" alt="Sketchbook. Базовий рівень. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal5">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h3 id="myModalLabel5">Sketchbook. Базовий рівень.</h3>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel5" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel5" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-level1-ua.png" alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-level1-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-level2-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-level2-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-level3-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-level3-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-level4-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-level4-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-level5-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-level5-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -512,36 +524,37 @@
             <a href="#myModal6" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/basic-skills-cover2-ua.png" alt="Sketchbook. Основні навички. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal6">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel6">Sketchbook. Основні навички.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel6" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel6" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-skills1-ua.png" alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-skills1-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-skills2-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-skills2-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-skills3-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-skills3-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-skills4-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-skills4-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-skills5-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-skills5-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -558,36 +571,37 @@
             <a href="#myModal7" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/advanced-techniques-cover2-ua.png" alt="Sketchbook. Досвідчений рівень. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal7">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel7">Sketchbook. Досвідчений рівень.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel7" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel7" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/advanced-techniques1-ua.png" alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/advanced-techniques1-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/advanced-techniques2-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/advanced-techniques2-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/advanced-techniques3-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/advanced-techniques3-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/advanced-techniques4-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/advanced-techniques4-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/advanced-techniques5-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/advanced-techniques5-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -604,36 +618,37 @@
             <a href="#myModal8" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/basic-level-cover2-ua.png" alt="Sketchbook. Базовий рівень. Друга обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal8">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel8">Sketchbook. Базовий рівень.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel8" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel8" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-level1-ua.png" alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-level1-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-level2-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-level2-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-level3-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-level3-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-level4-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-level4-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-level5-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-level5-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -650,36 +665,37 @@
             <a href="#myModal9" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/basic-skills-cover-ua.png" alt="Sketchbook. Основні навички. Друга обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal9">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel9">Sketchbook. Основні навички.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel9" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel9" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-skills1-ua.png" alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-skills1-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-skills2-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-skills2-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-skills3-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-skills3-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-skills4-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-skills4-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/basic-skills5-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/basic-skills5-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -696,36 +712,37 @@
             <a href="#myModal10" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/advanced-techniques-cover-ua.png"  alt="Sketchbook. Досвідчений рівень. Друга обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal10">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel10">Sketchbook. Досвідчений рівень.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel10" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel10" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/advanced-techniques1-ua.png" alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/advanced-techniques1-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/advanced-techniques2-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/advanced-techniques2-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/advanced-techniques3-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/advanced-techniques3-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/advanced-techniques4-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/advanced-techniques4-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/advanced-techniques5-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/advanced-techniques5-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -742,40 +759,41 @@
             <a href="#myModal11" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/draw-animals-cover2-ua.png" alt="Sketchbook. Малюємо тварин. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal11">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel11">Sketchbook. Малюємо тварин.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel11" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel11" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals1-ua.png" alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals1-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals2-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals2-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img  class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals3-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img  class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals3-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals4-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals4-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals5-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals5-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals6-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals6-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -792,40 +810,41 @@
             <a href="#myModal12" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/draw-animals-cover3-ua.png" alt="Sketchbook. Малюємо тварин. Друга обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal12">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel12">Sketchbook. Малюємо тварин.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel12" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel12" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals1-ua.png" alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals1-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals2-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals2-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img  class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals3-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img  class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals3-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals4-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals4-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals5-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals5-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals6-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals6-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -842,40 +861,41 @@
             <a href="#myModal13" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/draw-animals-cover-ru.png" alt="Sketchbook. Малюємо тварин. Російська версія. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal13">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel13">Sketchbook. Малюємо тварин.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel13" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel13" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img  class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img  class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals4-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-animals6-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-animals6-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -892,36 +912,37 @@
             <a href="#myModal14 " role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/draw-human-cover2-ua.png" alt="Sketchbook. Малюємо людину. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal14">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content"> 
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel14">Sketchbook. Малюємо людину.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel14" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel14" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-human1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-human1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-human2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-human2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-human3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-human3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-human4-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-human4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-human5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-human5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -937,36 +958,37 @@
           <li class="col-12 col-md-4">  
             <a href="#myModal15" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/draw-human-cover3-ua.png" alt="Sketchbook. Малюємо людину. Друга обкладинка." />
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal15">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content"> 
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel15">Sketchbook. Малюємо людину.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel15" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel15" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-human1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-human1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-human2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-human2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-human3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-human3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-human4-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-human4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-human5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-human5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -983,36 +1005,37 @@
             <a href="#myModal16" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/draw-human-cover-ru.png" alt="Sketchbook. Малюємо людину. Російська версія. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal16">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content"> 
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel16">Sketchbook. Малюємо людину.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel16" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel16" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-human1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-human1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-human2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-human2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-human3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-human3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-human4-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-human4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-human5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-human5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -1029,36 +1052,37 @@
             <a href="#myModal17" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/draw-landscape-cover-ua.png" alt="Sketchbook. Малюємо пейзаж. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal17">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content"> 
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel17">Sketchbook. Малюємо пейзаж.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel17" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel17" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-landscape1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-landscape1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-landscape2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-landscape2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-landscape3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-landscape3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-landscape4-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-landscape4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-landscape5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-landscape5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -1075,36 +1099,37 @@
             <a href="#myModal18" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/draw-landscape-cover2-ua.png" alt="Sketchbook. Малюємо пейзаж. Друга обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal18">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content"> 
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel18">Sketchbook. Малюємо пейзаж.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel18" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel18" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-landscape1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-landscape1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-landscape2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-landscape2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-landscape3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-landscape3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-landscape4-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-landscape4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/draw-landscape5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/draw-landscape5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -1121,36 +1146,37 @@
             <a href="#myModal19" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/simple-calligraphy-cover-ua.png" alt="Sketchbook. Мистецтво постої каліграфії. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal19">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content"> 
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel19">Sketchbook. Мистецтво постої каліграфії.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel19" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel19" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/simple-calligraphy1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/simple-calligraphy1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/simple-calligraphy2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/simple-calligraphy2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/simple-calligraphy3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/simple-calligraphy3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/simple-calligraphy4-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/simple-calligraphy4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/simple-calligraphy5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/simple-calligraphy5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -1167,36 +1193,37 @@
             <a href="#myModal20" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/simple-calligraphy-cover2-ua.png" alt="Sketchbook. Мистецтво постої каліграфії. Друга обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal20">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content"> 
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel20">Sketchbook. Мистецтво постої каліграфії.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel20" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel20" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/simple-calligraphy1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/simple-calligraphy1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/simple-calligraphy2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/simple-calligraphy2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/simple-calligraphy3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/simple-calligraphy3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/simple-calligraphy4-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/simple-calligraphy4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/simple-calligraphy5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/simple-calligraphy5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -1213,36 +1240,37 @@
             <a href="#myModal21" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/visual-cover2-ua.png" alt="Sketchbook. Візуальний експрес-курс рисування. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal21">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content"> 
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel21">Sketchbook. Візуальний експрес-курс рисування.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel21" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel21" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/visual1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/visual1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/visual2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/visual2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/visual3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/visual3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/visual4-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/visual4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/visual5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/visual5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -1259,36 +1287,37 @@
             <a href="#myModal22" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/visual-cover3-ua.png" alt="Sketchbook. Візуальний експрес-курс рисування. Друга обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal22">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content"> 
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel22">Sketchbook. Візуальний експрес-курс рисування.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel22" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel22" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/visual1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/visual1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/visual2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/visual2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/visual3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/visual3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/visual4-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/visual4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/visual5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/visual5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -1305,36 +1334,37 @@
             <a href="#myModal23" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/visual-cover-ru.png" alt="Sketchbook. Візуальний експрес-курс рисування. Російська версія. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">180 грн</span>
             </a>
             <div class="modal" id="myModal23">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content"> 
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel23">Sketchbook. Візуальний експрес-курс рисування.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel23" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel23" class="carousel slide responsive-img-bt" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/visual1-ua.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/visual1-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/visual2-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/visual2-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/visual3-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/visual3-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/visual4-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/visual4-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/visual5-ua.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/visual5-ua.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -1351,55 +1381,56 @@
       </div>
     </section>
     <section id="scrollto6" class="row doodlebook">
-      <h2 class="col-12 section-header">Doodlebook</h2 >
+      <h2 class="col-12 section-header">Doodlebook</h2>
       <div class="col-12">
         <ul class="books-shelf row">
           <li class="col-12 col-md-4">
             <a href="#myModal24" role="button" data-toggle="modal">
               <img src="images/mdqip.png" class="lazyload blur-up" data-src="images/doodlebook-cover-ua.png" alt="Doodlebook. Техніки творчої візуалізації. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">200 грн</span>
             </a>
             <div class="modal" id="myModal24">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel24">Doodlebook. Техніки творчої візуалізації.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel24" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel24" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook1-ua.png" alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook1-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook2-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook2-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook3-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook3-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook4-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook4-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item"> 
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook5-ua.png" alt="" />
+                        <div class="carousel-item"> 
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook5-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook6-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook6-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook7-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook7-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook8-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook8-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -1416,48 +1447,49 @@
             <a href="#myModal25" role="button" data-toggle="modal">
               <img src="images/mdqip.png" class="lazyload blur-up" data-src="images/doodlebook-cover2-ua.png" alt="Doodlebook. Техніки творчої візуалізації. Друга обкладинка."/>
               <div class="sk-rotating-plane"></div>
+              <span class="price">200 грн</span>
             </a>
             <div class="modal" id="myModal25">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel25">Doodlebook. Техніки творчої візуалізації.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel25" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel25" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook1-ua.png" alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook1-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook2-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook2-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook3-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook3-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook4-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook4-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook5-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook5-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook6-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook6-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook7-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook7-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/doodlebook8-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/doodlebook8-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -1474,40 +1506,41 @@
             <a href="#myModal26" role="button" data-toggle="modal">
               <img src="images/mdqip.png" class="lazyload blur-up" data-src="images/ok-doodle-cover-ua.png" alt="Doodlebook. Дудли, скетчі, зентагли. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">230 грн</span>
             </a>
             <div class="modal" id="myModal26">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel26">Doodlebook. Дудли, скетчі, зентагли.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel26" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel26" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/ok-doodle1-ua.png" alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/ok-doodle1-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/ok-doodle2-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/ok-doodle2-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/ok-doodle3-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/ok-doodle3-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/ok-doodle4-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/ok-doodle4-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/ok-doodle5-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/ok-doodle5-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/ok-doodle6-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/ok-doodle6-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -1524,40 +1557,41 @@
             <a href="#myModal27" role="button" data-toggle="modal">
               <img src="images/mdqip.png" class="lazyload blur-up" data-src="images/ok-doodle2-cover-ua.png" alt="Doodlebook. Дудли, скетчі, зентагли. Друга обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">230 грн</span>
             </a>
             <div class="modal" id="myModal27">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel27">Doodlebook. Дудли, скетчі, зентагли.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel27" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel27" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/ok-doodle1-ua.png" alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/ok-doodle1-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/ok-doodle2-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/ok-doodle2-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/ok-doodle3-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/ok-doodle3-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/ok-doodle4-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/ok-doodle4-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/ok-doodle5-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/ok-doodle5-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/ok-doodle6-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/ok-doodle6-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -1574,44 +1608,45 @@
             <a href="#myModal28" role="button" data-toggle="modal">
               <img src="images/mdqip.png" class="lazyload blur-up" data-src="images/step-10-cover-ua.png" alt="Doodlebook. 10 простих кроків до мистецтва візуалізації. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">200 грн</span>
             </a>
             <div class="modal" id="myModal28">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel28">Doodlebook. 10 простих кроків до мистецтва візуалізації.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel28" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel28" class="carousel slide" data-ride="carousel"> 
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/step1-10-ua.png" alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/step1-10-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/step2-10-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/step2-10-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/step3-10-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/step3-10-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/step4-10-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/step4-10-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/step5-10-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/step5-10-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/step6-10-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/step6-10-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/step7-10-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/step7-10-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -1628,44 +1663,45 @@
             <a href="#myModal29" role="button" data-toggle="modal">
               <img src="images/mdqip.png" class="lazyload blur-up" data-src="images/step-10-cover2-ua.png" alt="Doodlebook. 10 простих кроків до мистецтва візуалізації. Друга обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">200 грн</span>
             </a>
             <div class="modal" id="myModal29">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel29">Doodlebook. 10 простих кроків до мистецтва візуалізації.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel29" class="carousel slide">
-                                  <!-- Carousel items -->
+                    <div id="myCarousel29" class="carousel slide" data-ride="carousel">
+                                  <!-- Carousel carousel-items -->
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/step1-10-ua.png" alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/step1-10-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/step2-10-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/step2-10-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/step3-10-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/step3-10-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/step4-10-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/step4-10-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/step5-10-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/step5-10-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/step6-10-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/step6-10-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip.png" data-src="images/step7-10-ua.png" alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip.png" data-src="images/step7-10-ua.png" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -1695,32 +1731,32 @@
               <div class="sk-rotating-plane"></div>
             </a>
             <div class="modal" id="myModal30">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg fullscreen">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h3 id="myModalLabel30">Artbook. Belle Epoque. Прекрасна епоха.</h3>
                   </div>
                   <div class="modal-body">
                     <div id="myCarousel30" class="carousel slide">
                       <div class="carousel-inner">
-                        <div class="active item">
+                        <div class="active carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/belle-epoque1.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/belle-epoque2.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/belle-epoque3.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/belle-epoque4.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/belle-epoque5.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
@@ -1739,32 +1775,32 @@
               <div class="sk-rotating-plane"></div>
             </a>
             <div class="modal" id="myModal31">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg fullscreen">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h3 id="myModalLabel31">Artbook. Belle Epoque. Прекрасна епоха.</h3>
                   </div>
                   <div class="modal-body">
                     <div id="myCarousel31" class="carousel slide">
                       <div class="carousel-inner">
-                        <div class="active item">
+                        <div class="active carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/belle-epoque1.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/belle-epoque2.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/belle-epoque3.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/belle-epoque4.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/belle-epoque5.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
@@ -1783,32 +1819,32 @@
               <div class="sk-rotating-plane"></div>
             </a>
             <div class="modal" id="myModal32">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg fullscreen">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h3 id="myModalLabel32">Artbook. Імпресіоністи.</h3>
                   </div>
                   <div class="modal-body">
                     <div id="myCarousel32" class="carousel slide">
                       <div class="carousel-inner">
-                        <div class="active item">
+                        <div class="active carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/impressionists1.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/impressionists2.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/impressionists3.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/impressionists4.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/impressionists5.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
@@ -1827,32 +1863,32 @@
               <div class="sk-rotating-plane"></div>
             </a>
             <div class="modal" id="myModal33">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg fullscreen">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h3 id="myModalLabel33">Artbook. Імпресіоністи.</h3>
                   </div>
                   <div class="modal-body">
                     <div id="myCarousel33" class="carousel slide">
                       <div class="carousel-inner">
-                        <div class="active item">
+                        <div class="active carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/impressionists1.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/impressionists2.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/impressionists3.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/impressionists4.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/impressionists5.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
@@ -1871,32 +1907,32 @@
               <div class="sk-rotating-plane"></div>
             </a>
             <div class="modal" id="myModal34">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg fullscreen">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h3 id="myModalLabel34">Artbook. Monet. Оскар Клод Моне.</h3>
                   </div>
                   <div class="modal-body">
                     <div id="myCarousel34" class="carousel slide">
                       <div class="carousel-inner">
-                        <div class="active item">
+                        <div class="active carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/monet1.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/monet2.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/monet3.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/monet4.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/monet5.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
@@ -1915,32 +1951,32 @@
               <div class="sk-rotating-plane"></div>
             </a>
             <div class="modal" id="myModal35">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg fullscreen">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h3 id="myModalLabel35">Artbook. Monet. Оскар Клод Моне.</h3>
                   </div>
                   <div class="modal-body">
                     <div id="myCarousel35" class="carousel slide">
                       <div class="carousel-inner">
-                        <div class="active item">
+                        <div class="active carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/monet1.png" width="999" height="727" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/monet2.png" width="540" height="717" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/monet3.png" width="324" height="717" alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/monet4.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/monet5.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
@@ -1959,32 +1995,32 @@
               <div class="sk-rotating-plane"></div>
             </a>
             <div class="modal" id="myModal36">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg fullscreen">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h3 id="myModalLabel36">Artbook. Vinsent. Вінсент Ван Гог.</h3>
                   </div>
                   <div class="modal-body">
                     <div id="myCarousel36" class="carousel slide">
                       <div class="carousel-inner">
-                        <div class="item active">
+                        <div class="carousel-item active">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/van-gog1.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/van-gog2.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/van-gog3.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/van-gog4.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/van-gog5.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
@@ -2003,32 +2039,32 @@
               <div class="sk-rotating-plane"></div>
             </a>
             <div class="modal" id="myModal37">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg fullscreen">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h3 id="myModalLabel37">Artbook. Vinsent. Вінсент Ван Гог.</h3>
                   </div>
                   <div class="modal-body">
                     <div id="myCarousel37" class="carousel slide">
                       <div class="carousel-inner">
-                        <div class="item active">
+                        <div class="carousel-item active">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/van-gog1.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/van-gog2.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/van-gog3.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/van-gog4.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/van-gog5.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
@@ -2047,32 +2083,32 @@
               <div class="sk-rotating-plane"></div>
             </a>
             <div class="modal" id="myModal38">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg fullscreen">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h3 id="myModalLabel38">ArtBook. Тарас Шевченко.</h3>
                   </div>
                   <div class="modal-body">
                     <div id="myCarousel38" class="carousel slide">
                       <div class="carousel-inner">
-                        <div class="active item">
+                        <div class="active carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/shevchenko1.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/shevchenko2.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/shevchenko3.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/shevchenko4.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/shevchenko5.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
@@ -2091,32 +2127,32 @@
               <div class="sk-rotating-plane"></div>
             </a>
             <div class="modal" id="myModal39">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg fullscreen">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h3 id="myModalLabel39">ArtBook. Тарас Шевченко.</h3>
                   </div>
                   <div class="modal-body">
                     <div id="myCarousel39" class="carousel slide">
                       <div class="carousel-inner">
-                        <div class="active item">
+                        <div class="active carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/shevchenko1.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/shevchenko2.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/shevchenko3.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/shevchenko4.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                           <img class="lazyload blur-up" src="images/lqip.png" data-src="images/shevchenko5.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
@@ -2135,42 +2171,43 @@
     <section id="scrollto5" class="row listbook">
       <h2 class="col-12 section-header">
           Книга листівка
-      </h2 >
+      </h2>
       <div class="col-12">
         <ul class="books-shelf row">
           <li class="col-12 col-md-4">
             <a href="#myModal40" class="with-icon" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/card-monet-cover.png" alt="Monet. Книга листівка. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">50 грн</span>
             </a>
             <div class="modal" id="myModal40">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel40">Monet. Книга листівка.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel40" class="carousel slide">
+                    <div id="myCarousel40" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" src="images/lqip-sm.png" data-src="images/card-monet1.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip-sm.png" data-src="images/card-monet1.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip-sm.png" data-src="images/card-monet2.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip-sm.png" data-src="images/card-monet2.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip-sm.png" data-src="images/card-monet3.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip-sm.png" data-src="images/card-monet3.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip-sm.png" data-src="images/card-monet4.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip-sm.png" data-src="images/card-monet4.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip-sm.png" data-src="images/card-monet5.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip-sm.png" data-src="images/card-monet5.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
                       </div>
@@ -2186,35 +2223,36 @@
             <a href="#myModal41" class="with-icon" role="button" data-toggle="modal">
               <img class="lazyload blur-up" src="images/mdqip.png" data-src="images/card-van-gog-cover.png" alt="Vincent. Книга листівка. Обкладинка." />
               <div class="sk-rotating-plane"></div>
+              <span class="price">50 грн</span>
             </a>
             <div class="modal" id="myModal41">
-              <div class="modal-dialog fullscreen">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel41">Vincent. Книга листівка.</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <div id="myCarousel41" class="carousel slide">
+                    <div id="myCarousel41" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner">
-                        <div class="active item">
-                          <img class="lazyload blur-up" data-src="images/card-van-gog1.png"  alt="" />
+                        <div class="active carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" data-src="images/card-van-gog1.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip-sm.png" data-src="images/card-van-gog2.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip-sm.png" data-src="images/card-van-gog2.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip-sm.png" data-src="images/card-van-gog3.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip-sm.png" data-src="images/card-van-gog3.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip-sm.png" data-src="images/card-van-gog4.png"  alt="" />
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip-sm.png" data-src="images/card-van-gog4.png"  alt="" />
                           <div class="sk-rotating-plane"></div>
                         </div>
-                        <div class="item">
-                          <img class="lazyload blur-up" src="images/lqip-sm.png" 
+                        <div class="carousel-item">
+                          <img class="lazyload blur-up responsive-img-bt" src="images/lqip-sm.png" 
                            data-src="images/card-van-gog5.png"  alt="" />
                            <div class="sk-rotating-plane"></div>
                         </div>
@@ -2341,13 +2379,13 @@
     <section class="row delivery">
       <h2 id="scrollto3" class='col-12 section-header'>Оплата і доставка</h2>
       <p class="delivery-paragraph col-12">
-        Доставка осуществляется транспортной компанией Новая почта, которая производит отправление заказов только в города и населенные пункты, где расположены ее отделения. Адреса и график работы отделений вы можете посмотреть на сайте «Нова пошта».
+        Доставка здійснюється транспортною компанією Нова пошта, яка робить відправлення замовлень тільки в міста і населені пункти, де розташовані її відділення. Адреси та графік роботи відділень ви можете подивитися на сайті «Нова пошта».
       </p>
       <p class="delivery-paragraph col-12">
-        В большинство городов Украины посылка будет доставлена в отделение «Нова пошта» в течение 1-2 дней с момента отгрузки вашего заказа со склада. В отдаленные от областных центров населенные пункты посылка будет доставлена в течение 3-5 дней. Оплата услуг доставки производится получателем при получении посылки.
+        У більшості міст України посилка буде доставлена ​​до відділення «Нова пошта» протягом 1-2 днів з моменту відвантаження вашого замовлення зі складу. У віддалені від обласних центрів населені пункти посилка буде доставлена ​​протягом 3-5 днів. Оплата послуг доставки здійснюється одержувачем при отриманні посилки.
       </p>
       <p class="delivery-paragraph col-12 m-b-delivery">
-        <strong>Оплатить заказ вы можете двумя способами</strong>: перевод на карту Приватбанка или наложенный платеж при получении посылки на Новой Почте
+        <strong>Оплатити замовлення ви можете двома способами:</strong> на карту Приватбанку або накладений платіж при отриманні посилки на Новій Пошті
       </p>
     </section>
   </main>
@@ -2376,7 +2414,7 @@
               <textarea class="form-control" name="field-message" placeholder="Повідомлення" id="contact-message" rows="1" required></textarea>
               <label for="contact-message" class="access-visible">Повідомлення</label>
             </div>
-            <button type="submit" id="contact-send" class="btn btn-primary btn-lg btn-block">Відправити</button>
+            <button type="submit" id="contact-send" class="btn btn-primary btn-lg btn-block">Заказати</button>
           </form>
         </div>
       </div>

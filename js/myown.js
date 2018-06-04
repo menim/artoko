@@ -9,7 +9,7 @@
 
           /* INIT slick slider */
 
-  $('.single-item').slick({
+$('.single-item').slick({
     slidesToShow: 4,
     responsive: [
       {
@@ -25,7 +25,7 @@
         }
        }
     ]
-});            
+});        
 
                 /* Scroll to usage */
                         
@@ -58,7 +58,7 @@
     $.scrollTo('#scrollto2',1000,{offset: -60});
   });
 
-  $('.our_projects').click(function(e){
+  $('.delivery').click(function(e){
     e.preventDefault();
     $.scrollTo('#scrollto3',1000,{offset: -60});
   });
@@ -86,6 +86,11 @@
   $('.video_views').click(function(e){
     e.preventDefault();
     $.scrollTo('#scrollto8',1000,{offset: -60});
+  });
+
+  $('.travelbook_link').click(function(e){
+    e.preventDefault();
+    $.scrollTo('#scrollto9',1000,{offset: -60});
   });
 
 
