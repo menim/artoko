@@ -7,16 +7,7 @@ ul {
 a,
 a:focus,
 a:hover {
-  outline-style: none;
-}
-
-h2 {
-  text-align: center;
-  text-transform: uppercase;
-  color: #723B33;
-  letter-spacing: 1px;
-  font-size: 1.7em;
-  margin: 40px auto;
+  outline-style: 1px dotted blue;
 }
 
 h2:first-child {
@@ -28,19 +19,18 @@ h3 {
   margin-top: 10px;
 }
 
-.books-shelf .m-t-56 {
+.m-t-56 {
 	margin-top: 56px;
 }
 
-.books-shelf .m-t-38 {
+.m-t-38 {
 	margin-top: 38px;
 }
 
 #dynamic-to-top,
 .arrow-up, 
 .form-group, 
-.modal-body, 
-nav {
+.modal-body {
   overflow: hidden;
 }
 
@@ -96,42 +86,46 @@ a[href^="#myModal"] {
   margin: 0 auto;
 }
 
-.carousel, 
-.navbar {
+.carousel {
   margin-bottom: 0;
 }
 
-.navbar {
-  border-radius: 0;
-  border: 0;
+.section-header {
+  text-align: center;
+  text-transform: uppercase;
+  color: #723B33;
+  letter-spacing: 1px;
+  font-size: 1.7em;
+  margin: 40px auto;
 }
 
-nav {
-  border: 0;
-  border-radius: 0;
+/*                   Navbar custom styles
+ */
+
+.navbar-custom {
   background-color: #723b33;
   background-image: linear-gradient(top, #723b33, #723b33);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#723b33',  endColorstr='#723b33',  GradientType=0);
 }
 
-.nav-collapse>.nav {
-  margin-top: 10px;
+.navbar-custom .nav-link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .1em;
 }
 
-.navbar-brand {
-  padding-top: 5px;
+.navbar-custom .nav-link:hover {
+  background-color: transparent;
+  color: #000;
+} 
+
+.navbar-custom .navbar-toggler {
+  border: 1px solid #fff;
 }
 
-.navbar-default {
-  background-color: #723b33; 
-}
-
-.navbar-default .navbar-toggle {
-  border-color: #fff;
-}
-
-.navbar-default .navbar-toggle:hover {
-  background-color: #fff;
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .with-icon:before {
@@ -185,21 +179,21 @@ nav {
 
 .slick-prev, 
 .slick-next {
-    font-size: 0;
-    line-height: 0;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 50%;
-    display: none;
-    margin-top: -10px;
-    padding: 0;
-    cursor: pointer;
-    color: transparent;
-    border: none;
-    outline: none;
-    background: transparent;
-    z-index: 1;
+  font-size: 0;
+  line-height: 0;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  display: none;
+  margin-top: -10px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 1;
 }
 
 .slick-next {
@@ -234,21 +228,12 @@ nav {
   border-right-color: green;
 }
 
-            
-          /* Our projects styles*/
-          
-.navbar .nav>li>a {
-  color: #fff;
-  text-shadow: none;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: .1em;
+.slick-slide {
+  padding: 0 10px;
 }
 
-.navbar .nav>li>a:hover {
-  background-color: transparent;
-  color: #000;
-}
+            
+          /* Our projects styles*/
 
 .tabs-right>.nav-tabs {
   border: 0;
@@ -407,6 +392,29 @@ footer {
   border-bottom: 7px solid #fff;
 }
 
+    /* Delivery section */
+    
+
+.delivery-paragraph {
+    font-size: 16px;
+}
+
+.m-b-delivery {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+  .delivery {
+    padding: 0 9em;
+  }
+
+  .delivery-paragraph {
+    font-size: 20px;
+  }
+}
+
+     /* Footer section */
+
 .contacts {
   color: #b8a69f;
   line-height: 1.8em;
@@ -481,10 +489,6 @@ textarea {
   margin-top: 0;
 }
 
-.clearfix {
-    clear: both;
-}
-
 .has-error input, 
 .has-error textarea {
   color: #e74c3c;
@@ -516,7 +520,7 @@ textarea.form-control:focus {
 }
 
 @media (max-width:600px) {
-    
+
   .form {
     width: 90%;
     margin-top: 12%;
@@ -543,7 +547,7 @@ textarea.form-control:focus {
     width: 100%
  	}
 
-  .navbar-nav>li>a{
+  .navbar-nav>li>a {
     font-size: .8em;
     padding-right: 12px;
     padding-left: 0;
