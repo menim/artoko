@@ -173,11 +173,16 @@ a[href^="#myModal"] {
   display: block;
   font-size: 20px;
   padding-top: .5em;
+  text-align: center;
 }
 
 .price:hover,
 .price:focus {
   color: #723B33;
+}
+
+.txt-align-center {
+  text-align: center;
 }
               
               /* visible effect for lazyloading images  */

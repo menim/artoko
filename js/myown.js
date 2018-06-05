@@ -53,37 +53,38 @@ $('.single-item').slick({
 
   });
         
-  $('.el_books').click(function(e){
-    e.preventDefault();
-    $.scrollTo('#scrollto2',1000,{offset: -60});
-  });
-
-  $('.delivery').click(function(e){
+ 
+  $('.delivery-link').click(function(e){
     e.preventDefault();
     $.scrollTo('#scrollto3',1000,{offset: -60});
   });
 
-  $('.card_link').click(function(e){
+  $('.bookmark-link').click(function(e){
+    e.preventDefault();
+    $.scrollTo('#scrollto2',1000,{offset: -60});
+  });
+
+  $('.card-link').click(function(e){
     e.preventDefault();
     $.scrollTo('#scrollto5',1000,{offset: -60});
   });
 
-  $('.sketchbook_link').click(function(e){
+  $('.sketchbook-link').click(function(e){
     e.preventDefault();
     $.scrollTo('#scrollto7',1000,{offset: -60});
   });
    
-  $('.doodlebook_link').click(function(e){
+  $('.doodlebook-link').click(function(e){
     e.preventDefault();
     $.scrollTo('#scrollto6',1000,{offset: -60});
   });
 
-  $('.video_views').click(function(e){
+  $('.video-views').click(function(e){
     e.preventDefault();
     $.scrollTo('#scrollto8',1000,{offset: -60});
   });
 
-  $('.travelbook_link').click(function(e){
+  $('.travelbook-link').click(function(e){
     e.preventDefault();
     $.scrollTo('#scrollto9',1000,{offset: -60});
   });
