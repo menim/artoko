@@ -63,11 +63,6 @@ $('.single-item').slick({
     $.scrollTo('#scrollto3',1000,{offset: -60});
   });
 
-  $('.artnote_link').click(function(e){
-    e.preventDefault();
-    $.scrollTo('#scrollto4',1000,{offset: -60});
-  });
-
   $('.card_link').click(function(e){
     e.preventDefault();
     $.scrollTo('#scrollto5',1000,{offset: -60});
