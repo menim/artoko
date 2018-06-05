@@ -4,9 +4,8 @@ ul {
 }
 
 /*  this not accessble from keyboard fixed when will find answer */
-a,
-a:focus,
-a:hover {
+
+a:focus {
   outline: 1px dotted blue;
 }
 
@@ -48,6 +47,10 @@ main,
 nav, 
 section {
   display: block;
+}
+
+iframe {
+  border: 0;
 }
 
 @font-face {
