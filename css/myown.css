@@ -462,7 +462,8 @@ footer {
   cursor: pointer;
   -webkit-font-smoothing: subpixel-antialiased;
   transition: all .5s;
-  font-size: 17px;
+  font-size: 13px;
+  line-height: 1;
   display: inline-block;
   width: auto;
   border-radius: 3px;
