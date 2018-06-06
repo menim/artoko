@@ -15,7 +15,7 @@ h2:first-child {
 
 h3 {
 	font-size: 18px;
-  margin-top: 10px;
+  margin: 0;
 }
 
 .m-t-56 {
@@ -358,11 +358,11 @@ video {
 
 .modal-header {
   background-color: #AE5E53;
-  padding: 10px;
+  padding: .5em 1.5em;
 }
 
 .modal-header .close {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .carousel-control.left,
@@ -628,7 +628,7 @@ textarea.form-control:focus {
   }
 
   h3 {
-  	font-size: 24px
+  	font-size: 19px
   }
 }
 
