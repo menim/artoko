@@ -36,6 +36,7 @@ h3 {
 body {
   font: 14px pt_sansregular, Arial, sans-serif;
   margin-top: 50px;
+  min-width: 320px;
 }
 
 address,
