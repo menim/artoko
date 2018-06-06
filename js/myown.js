@@ -6,6 +6,10 @@
     interval: false
   });
 
+          /* scrool to init */
+
+    var scroll = new SmoothScroll('a[href*="#"]');
+
 
           /* INIT slick slider */
 
@@ -52,43 +56,6 @@ $('.single-item').slick({
     });
 
   });
-        
- 
-  $('.delivery-link').click(function(e){
-    e.preventDefault();
-    $.scrollTo('#scrollto3',1000,{offset: -60});
-  });
-
-  $('.bookmark-link').click(function(e){
-    e.preventDefault();
-    $.scrollTo('#scrollto2',1000,{offset: -60});
-  });
-
-  $('.card-link').click(function(e){
-    e.preventDefault();
-    $.scrollTo('#scrollto5',1000,{offset: -60});
-  });
-
-  $('.sketchbook-link').click(function(e){
-    e.preventDefault();
-    $.scrollTo('#scrollto7',1000,{offset: -60});
-  });
-   
-  $('.doodlebook-link').click(function(e){
-    e.preventDefault();
-    $.scrollTo('#scrollto6',1000,{offset: -60});
-  });
-
-  $('.video-views').click(function(e){
-    e.preventDefault();
-    $.scrollTo('#scrollto8',1000,{offset: -60});
-  });
-
-  $('.travelbook-link').click(function(e){
-    e.preventDefault();
-    $.scrollTo('#scrollto9',1000,{offset: -60});
-  });
-
 
   function validateName() {
     var a = $("#contact-name"),
