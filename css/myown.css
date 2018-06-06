@@ -58,6 +58,7 @@ iframe {
   font-family: pt_sansregular;
   src: url(../fonts/PTS55F-webfont.eot);
   src: url(../fonts/PTS55F-webfont.eot?#iefix) format('embedded-opentype'), 
+  url(../fonts/PTS55F-webfont.woff2) format('woff2'),
   url(../fonts/PTS55F-webfont.woff) format('woff'), 
   url(../fonts/PTS55F-webfont.ttf) format('truetype'), 
   url(../fonts/PTS55F-webfont.svg#pt_sansregular) format('svg');
