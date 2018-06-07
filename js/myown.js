@@ -10,6 +10,8 @@
 
     var scroll = new SmoothScroll('.nav-link');
 
+    var modal = new VanillaModal.default(); 
+
 
           /* INIT slick slider */
 
@@ -29,7 +31,7 @@ $('.single-item').slick({
         }
        }
     ]
-});        
+}); 
 
                 /* Scroll to usage */
                         

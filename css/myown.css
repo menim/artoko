@@ -105,6 +105,11 @@ a[href^="#myModal"] {
   margin: 75px auto 40px;
 }
 
+.modal-v-align {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /*                   Navbar custom styles
  */
 
