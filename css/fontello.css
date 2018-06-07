@@ -55,6 +55,6 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-phone:before { content: '\e800'; } /* '' */
+.icon-phone:before { content: '\e800'; transform: rotate(90deg); } /* '' */
 .icon-mail:before { content: '\e801'; } /* '' */
 .icon-location:before { content: '\e802'; } /* '' */
