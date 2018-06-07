@@ -9,10 +9,6 @@ a:focus {
   outline: 1px dotted blue;
 }
 
-h2:first-child {
-	margin-top: 60px;
-}
-
 h3 {
 	font-size: 18px;
   margin: 0;
@@ -35,7 +31,7 @@ h3 {
 
 body {
   font: 14px pt_sansregular, Arial, sans-serif;
-  margin-top: 50px;
+  margin-top: 64px;
   min-width: 320px;
 }
 
@@ -106,7 +102,7 @@ a[href^="#myModal"] {
   color: #723B33;
   letter-spacing: 1px;
   font-size: 1.7em;
-  margin: 40px auto;
+  margin: 75px auto 40px;
 }
 
 /*                   Navbar custom styles
