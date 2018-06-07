@@ -6,32 +6,13 @@
     interval: false
   });
 
-          /* scrool to init */
+          /* scroll to init */
 
     var scroll = new SmoothScroll('.nav-link');
 
+         /* modal window init */
+
     var modal = new VanillaModal.default(); 
-
-
-          /* INIT slick slider */
-
-$('.single-item').slick({
-    slidesToShow: 4,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-         slidesToShow: 2
-       }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1
-        }
-       }
-    ]
-}); 
 
                 /* Scroll to usage */
                         
@@ -56,7 +37,6 @@ $('.single-item').slick({
       }, 500);
       return false;
     });
-
   });
 
   function validateName() {

@@ -203,68 +203,13 @@ a[href^="#myModal"] {
 
           /* Video youtube styles */
 
-.youtube-item,
-.resp-img {
-  width: 100%;
+.youtube-item {
+  margin-bottom: 20px;
 }
 
-.slick-prev, 
-.slick-next {
-  font-size: 0;
-  line-height: 0;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 50%;
-  display: none;
-  margin-top: -10px;
-  padding: 0;
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent;
-  z-index: 1;
+.youtube-item:last-child {
+  margin-bottom: 0;
 }
-
-.slick-next {
-  right: 0;
-}
-
-.slick-next:before,
-.slick-prev:before {
-  content: '';
-  display: inline-block;
-  border-top: 2px #000 solid;
-  border-right: 2px #000 solid;
-  width: 10px;
-  height: 10px;
-  background-color: transparent;
-  -ms-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.slick-prev {
-  left: 0;
-}
-
-.slick-prev:before {
-  -ms-transform: rotate(-135deg);
-      -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-}
-
-.slick-prev:hover:before,
-.slick-next:hover:before {
-  border-top-color: green;
-  border-right-color: green;
-}
-
-.slick-slide {
-  padding: 0 10px;
-}
-
             
           /* Our projects styles*/
 
