@@ -1,11 +1,5 @@
  $(document).ready(function(){
 
-           /* Slider options */
-
-  $('.carousel').carousel({
-    interval: false
-  });
-
           /* scroll to init */
 
     var scroll = new SmoothScroll('.nav-link');
@@ -13,6 +7,15 @@
          /* modal window init */
 
     var modal = new VanillaModal.default(); 
+
+        /* tiny slider init */
+
+    var sliders = document.querySelectorAll('.carousel');
+    var len = sliders.length;
+    
+    for(var i=0; i<len; i++) {
+      tns({container: sliders[i], nav: false});
+    }
 
                 /* Scroll to usage */
                         
