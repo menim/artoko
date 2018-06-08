@@ -6,7 +6,7 @@ module.exports=function(grunt){
         separator:';'
       },
       dist: {
-        src:['js/jquery-1.11.3.min.js','js/bootstrap.min.js','js/jquery.scrollTo.min.js','js/lazysizes.min.js','js/slick.js','js/myown.js'],
+        src:['js/jquery-1.11.3.min.js','js/tiny-slider.js','js/modal.js','js/smooth-scroll.polyfills.js','js/lazysizes.min.js','js/myown.js'],
         dest:'dist/js/myown.js'
       }
     },
@@ -69,7 +69,7 @@ module.exports=function(grunt){
       options: {
       },
       all: {
-        src: ["css/bootstrap-reboot.min.css","css/bootstrap.min.css","css/font-awesome.min.css","css/slick.css","css/myown.css"],
+        src: ["css/bootstrap-reboot.min.css","css/bootstrap.min.css","css/font-awesome.min.css","css/modal.css","css/tiny-slider.css","css/myown.css"],
         dest:"dist/css/myown.css"
       }
     },
