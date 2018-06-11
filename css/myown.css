@@ -594,4 +594,44 @@ textarea.form-control:focus {
     right: -10px;
   }
 }
-      
+
+/* tns slider */
+
+.tns-controls [data-controls="next"],
+.tns-controls [data-controls="prev"] {
+  position: absolute;
+  background-color: transparent;
+  border-left: 0;
+  border-bottom: 0;
+  border-right: 4px solid #000;
+  border-top: 4px solid #000;
+  width: 25px;
+  height: 25px;
+  top: 50%;
+  z-index: 100;
+  display: block;
+}
+
+.tns-controls [data-controls="next"]:hover,
+.tns-controls [data-controls="prev"]:hover {
+  border-right-color: #aaa;
+  border-top-color:  #aaa;
+}
+
+.tns-controls [data-controls="next"] {
+  right: 10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.tns-controls [data-controls="prev"] {
+  left: 10px;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}

@@ -14,7 +14,7 @@
     var len = sliders.length;
     
     for(var i=0; i<len; i++) {
-      tns({container: sliders[i], nav: false});
+      tns({container: sliders[i], nav: false, controlsText:['','']});
     }
 
                 /* Scroll to usage */
