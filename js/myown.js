@@ -17,30 +17,8 @@
       tns({container: sliders[i], nav: false, controlsText:['','']});
     }
 
-                /* Scroll to usage */
-                        
-  $('#dynamic-to-top').hide();
-        
-                // fade in #back-top
-        
-  $(function () {
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 400) {
-        $('#dynamic-to-top').fadeIn();
-      } else {
-        $('#dynamic-to-top').fadeOut();
-      }
-    });
-        
-                         // scroll body to 0px on click
-            
-    $('#dynamic-to-top').click(function () {
-      $('body, html').animate({
-        scrollTop: 0
-      }, 500);
-      return false;
-    });
-  });
+
+                       /* validation form */
 
   function validateName() {
     var a = $("#contact-name"),
