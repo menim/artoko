@@ -16,9 +16,21 @@
     for(var i=0; i<len; i++) {
       tns({container: sliders[i], nav: false, controlsText:['','']});
     }
+        
 
+                /* fade in #back-top */
 
-                       /* validation form */
+var toTopElement = document.getElementById('dynamic-to-top');    
+
+window.addEventListener('scroll', function() {
+  if(window.pageYOffset > 400) {
+    toTopElement.classList.remove('hide');
+  } else {
+    toTopElement.classList.add('hide');
+  }
+});
+
+                /* form validate */
 
   function validateName() {
     var a = $("#contact-name"),
