@@ -33,21 +33,24 @@ window.addEventListener('scroll', function() {
 
                 /* form validate */
 
-var nameField = document.getElementById('contact-name');
-var emailField = document.getElementById('contact-email');
-var textField = document.getElementById('contact-message');
-var formBtn = document.getElementById('contact-send');
+(function(){
 
-var validRegExp = {
+  var contactForm = document.getElementById('contact-form');
+  var nameField = document.getElementById('contact-name');
+  var emailField = document.getElementById('contact-email');
+  var textField = document.getElementById('contact-message');
+  var formBtn = document.getElementById('contact-send');
+
+  var validRegExp = {
   email: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
   name:  /^[а-яА-яіІЇїЄєґҐёЁA-Za-z]+$/
-};
+  };
 
-var hasError = function(field) {
+  var hasError = function(field) {
   if(field.type === 'button' || field.type === 'submit') {
     return ;
   }
-  
+
   var emailTest = validRegExp.email.test(field.value);
   var nameTest = validRegExp.name.test(field.value);
 
@@ -60,13 +63,13 @@ var hasError = function(field) {
   if(field.name === 'field-email' && !emailTest) {
     return 'Ви ввели невірний email'; 
   }
-};
+  };
 
-var showError = function(field, error) {
-  
+  var showError = function(field, error) {
+
   field.classList.add('form-error');
   var id = field.id || field.name;
-  
+
   if(!id) return;
   var message = field.form.querySelector('.error-message#error-for-' + id);
 
@@ -83,9 +86,9 @@ var showError = function(field, error) {
 
   message.style.display = 'block';
   message.style.visibility = 'visible';
-};
+  };
 
-var removeError = function(field) {
+  var removeError = function(field) {
   field.classList.remove('form-error');
   field.removeAttribute('aria-describedby');
 
@@ -98,19 +101,18 @@ var removeError = function(field) {
   message.innerHTML = '';
   message.style.display = 'none';
   message.style.visibility = 'hidden';
-}
+  }
 
-
-document.addEventListener('blur', function(event){
+  contactForm.addEventListener('blur', function(event){
   var error = hasError(event.target);
   if(error) {
     showError(event.target, error);
     return;
   }
   removeError(event.target);
-}, true);
+  }, true);
 
-document.addEventListener('submit', function(event) {
+  document.addEventListener('submit', function(event) {
   var fields = event.target.elements;
   var fieldsLen = fields.length;
 
@@ -129,8 +131,9 @@ document.addEventListener('submit', function(event) {
     event.preventDefault();
     hasErrors.focus();
   }
-});
+  });
 
+})();
 /*
   function validateName() {
     var a = $("#contact-name"),
