@@ -1,4 +1,4 @@
- $(document).ready(function(){
+/* $(document).ready(function(){*/
 
           /* scroll to init */
 
@@ -30,8 +30,108 @@ window.addEventListener('scroll', function() {
   }
 });
 
+
                 /* form validate */
 
+var nameField = document.getElementById('contact-name');
+var emailField = document.getElementById('contact-email');
+var textField = document.getElementById('contact-message');
+var formBtn = document.getElementById('contact-send');
+
+var validRegExp = {
+  email: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+  name:  /^[а-яА-яіІЇїЄєґҐёЁA-Za-z]+$/
+};
+
+var hasError = function(field) {
+  if(field.type === 'button' || field.type === 'submit') {
+    return ;
+  }
+  
+  var emailTest = validRegExp.email.test(field.value);
+  var nameTest = validRegExp.name.test(field.value);
+
+  if(field.value === '') {
+    return 'Будь ласка заповніть поле';
+  }
+  if(field.name === 'field-name' && !nameTest) {
+    return "Ви ввели неправильне ім'я";
+  }
+  if(field.name === 'field-email' && !emailTest) {
+    return 'Ви ввели невірний email'; 
+  }
+};
+
+var showError = function(field, error) {
+  
+  field.classList.add('form-error');
+  var id = field.id || field.name;
+  
+  if(!id) return;
+  var message = field.form.querySelector('.error-message#error-for-' + id);
+
+  if(!message) {
+    message = document.createElement('div');
+    message.className = 'error-message';
+    message.id = 'error-for-' + id;
+    field.parentNode.insertBefore(message, field.nextSibling);
+  }
+
+  field.setAttribute('aria-describedby', 'error-for-' + id);
+
+  message.innerHTML = error;
+
+  message.style.display = 'block';
+  message.style.visibility = 'visible';
+};
+
+var removeError = function(field) {
+  field.classList.remove('form-error');
+  field.removeAttribute('aria-describedby');
+
+  var id = field.id || field.name;
+  if(!id) return;
+
+  var message = field.form.querySelector('.error-message#error-for-' + id);
+  if(!message) return;
+
+  message.innerHTML = '';
+  message.style.display = 'none';
+  message.style.visibility = 'hidden';
+}
+
+
+document.addEventListener('blur', function(event){
+  var error = hasError(event.target);
+  if(error) {
+    showError(event.target, error);
+    return;
+  }
+  removeError(event.target);
+}, true);
+
+document.addEventListener('submit', function(event) {
+  var fields = event.target.elements;
+  var fieldsLen = fields.length;
+
+  var error, hasErrors;
+  for(var i = 0; i < fieldsLen; i++) {
+    error = hasError(fields[i]);
+    if(error) {
+      showError(fields[i], error);
+      if(!hasErrors) {
+        hasErrors = fields[i];
+      }
+    }
+  }
+
+  if(hasErrors) {
+    event.preventDefault();
+    hasErrors.focus();
+  }
+});
+
+/*
   function validateName() {
     var a = $("#contact-name"),
         b = a.val().trim(),
@@ -79,3 +179,4 @@ window.addEventListener('scroll', function() {
 	});        
 });
 
+*/

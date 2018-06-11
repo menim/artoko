@@ -432,15 +432,6 @@ textarea {
   -webkit-appearance: none;
 }
 
-#contact-name,
-.form-group.left {
-    float: left;
-}
-
-.form-group.right {
-  float: right;
-}
-
 .form-group.left, 
 .form-group.right {
   width: 45%
@@ -479,6 +470,15 @@ textarea.form-control {
 textarea.form-control:focus {
   height: 200px;
   border-color: #48c9b0;
+}
+
+
+.error-message {
+  padding-top: 5px;
+  text-align: left;
+  color: #f8b4b4;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 600px) {
