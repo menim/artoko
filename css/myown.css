@@ -210,10 +210,6 @@ a[href^="#myModal"] {
 .youtube-item {
   margin-bottom: 20px;
 }
-
-.youtube-item:last-child {
-  margin-bottom: 0;
-}
             
           /* Our projects styles*/
 
@@ -540,6 +536,10 @@ textarea.form-control:focus {
 
   .modal-header {
     padding: 1em 1em;
+  }
+
+  .youtube-item:last-child {
+    margin-bottom: 0;
   }
 }
 
