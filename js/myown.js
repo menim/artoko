@@ -1,4 +1,3 @@
-/* $(document).ready(function(){*/
 
           /* scroll to init */
 
@@ -8,15 +7,27 @@
 
     var modal = new VanillaModal.default(); 
 
-        /* tiny slider init */
 
-    var sliders = document.querySelectorAll('.carousel');
-    var len = sliders.length;
-    
-    for(var i=0; i<len; i++) {
-      tns({container: sliders[i], nav: false, controlsText:['','']});
-    }
-        
+    /* get all links that has Modal and if they have Modal in href property and 
+       add to them event listener that when clicks initialize tiny slider  */
+
+ var a = document.querySelectorAll('a');
+ 
+ for(var j = 0; j < a.length; j++) {
+  if(a[j].href.indexOf('Modal') !== -1) {
+    a[j].addEventListener('click', initTnsSlider);
+  }
+}
+            /* init tns slider when click on link */
+
+function initTnsSlider() {
+  var index = this.href.indexOf('#');
+  var linkToModal = this.href.substr(index);
+  var queryContainer = linkToModal + ' .carousel';
+  var carousel = document.querySelector(linkToModal + ' .carousel');
+  tns({container: carousel, nav: false, controlsText: ['', '']});
+}
+
 
                 /* fade in #back-top */
 
@@ -134,52 +145,3 @@ window.addEventListener('scroll', function() {
   });
 
 })();
-/*
-  function validateName() {
-    var a = $("#contact-name"),
-        b = a.val().trim(),
-        c = new RegExp(/^[а-яА-яіІЇїЄєґҐёЁA-Za-z]+$/),
-        d = c.test(b);
-        !d ? (a.parent().removeClass("has-success").addClass("has-error"), nameSuccess = !1) : (a.parent().removeClass("has-error").addClass("has-success"), nameSuccess = !0);
-	}
-
-	function validateEmail() {
-    var a = $("#contact-email"),
-        b = a.val().trim(),
-        c = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i),
-        d = c.test(b);
-        d ? (a.parent().removeClass("has-error").addClass("has-success"), emailSuccess = !0) : (a.parent().removeClass("has-success").addClass("has-error"), emailSuccess = !1);
-	}
-
-	function validateMessage() {
-    var a = $("#contact-message"),
-        b = a.val().trim();
-        b.length > 1 ? (a.parent().removeClass("has-error").addClass("has-success"), messageSuccess = !0) : (a.parent().removeClass("has-success").addClass("has-error"), messageSuccess = !1);
-	}
-
-	var nameSuccess = !1,
-      emailSuccess = !1,
-      messageSuccess = !1,
-      $elements = $("input, textarea");
-  $elements.on("focus", function() {
-    var a = $(this);
-    $elements.each(function() {
-      var b = $(this);
-      b !== a && $(this).parent().css("opacity", 0.5);
-     }), 
-          a.parent().css("opacity", 1);
-	}),
-
-  $("#contact-name").on("blur", validateName),
-  $("#contact-email").on("blur", validateEmail),
-  $("#contact-message").on("blur", validateMessage),
-  $("#contact-send").on("click", function(a) {
-    validateName(),
-    validateEmail(),
-    validateMessage(),
-    nameSuccess && emailSuccess && messageSuccess ? $(this).text("отправлено") : nameSuccess ? emailSuccess ? messageSuccess || ($("#contact-message").focus(), 
-    a.preventDefault()) : ($("#contact-email").focus(), a.preventDefault()) : ($("#contact-name").focus(), a.preventDefault());
-	});        
-});
-
-*/
