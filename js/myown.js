@@ -42,6 +42,16 @@ window.addEventListener('scroll', function() {
 });
 
 
+                /* show hide menu on mobile */
+
+  var btn = document.querySelector('.navbar-toggler');
+  var menu = document.querySelector('.collapse');
+
+  btn.addEventListener('click', function() {
+     menu.classList.toggle('collapse');
+  })
+
+
                 /* form validate */
 
 (function(){
