@@ -67,12 +67,3 @@
   border: 0;
 }
 
-[data-modal-close] {
-  position: absolute;
-  z-index: 2;
-  right: 20px;
-  top: 6px;
-  font-size: 40px;
-  cursor: pointer;
-  text-align: center;
-}
