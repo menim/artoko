@@ -69,7 +69,7 @@ module.exports=function(grunt){
       options: {
       },
       all: {
-        src: ["css/bootstrap-reboot.min.css","css/bootstrap.min.css","css/modal.css","css/tiny-slider.css","css/myown.css"],
+        src: ["css/bootstrap-reboot.min.css","css/bootstrap.grid.min.css","css/modal.css","css/tiny-slider.css","css/myown.css"],
         dest:"dist/css/myown.css"
       }
     },
