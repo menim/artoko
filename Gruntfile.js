@@ -75,10 +75,10 @@ module.exports=function(grunt){
     },
     autoprefixer: {
       options: {
-      browsers: ['last 5 versions', 'ie 8', 'ie 9']
+      browsers: ['last 10 versions', 'ie 8', 'ie 9']
     },
     dist: {
-      src: 'css/myown.css'
+      src: 'dist/css/myown.css'
     }
   },
     watch: {
@@ -122,5 +122,5 @@ module.exports=function(grunt){
   grunt.loadNpmTasks('grunt-html');
   grunt.loadNpmTasks('grunt-stylelint');
   grunt.registerTask('ondev',['browserSync', 'watch']);
-  grunt.registerTask('onprod', ['autoprefixer','concat_css','cssmin','concat']);
+  grunt.registerTask('onprod', ['concat_css','cssmin','autoprefixer','concat']);
 };
