@@ -106,6 +106,20 @@ module.exports=function(grunt){
         },
         src:'css/myown.css'
       }
+    },
+    critical: {
+      test: {
+          options: {
+              base: 'dist',
+              css: [
+                  'css/myown.css'
+              ],
+              width: 1170,
+              height: 500
+          },
+          src: 'dist/index.html',
+          dest: 'dist/critical.css'
+      }
     }
   });   
   grunt.loadNpmTasks('grunt-contrib-uglify'); 
@@ -121,6 +135,7 @@ module.exports=function(grunt){
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-html');
   grunt.loadNpmTasks('grunt-stylelint');
+  grunt.loadNpmTasks('grunt-critical');
   grunt.registerTask('ondev',['browserSync', 'watch']);
   grunt.registerTask('onprod', ['concat_css','cssmin','autoprefixer','concat']);
 };
