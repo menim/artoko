@@ -194,6 +194,7 @@ a[href^="#myModal"] {
 
   .navbar-collapse {
     display: inline-block;
+    vertical-align: middle;
   }
 
   .navbar-brand {
@@ -426,16 +427,18 @@ a[href^="#myModal"] {
 
 .form__input {
   border-radius: 3px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: 0;
   height: 2.5em;
-  padding: 1em;
+  line-height: 2.5em;
+  padding: 0 1em;
   width: 100%;
 }
 
 .form__input_textarea {
   height: 10em;
+  line-height: normal;
+  padding-top: 1em;
   vertical-align: bottom;
   margin-bottom: 0;
 }
@@ -500,7 +503,6 @@ a[href^="#myModal"] {
 .tns-outer {
   text-align: center;
 }
-
 
 @media (max-width: 400px) {
   .tns-outer img {
