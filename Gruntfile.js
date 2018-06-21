@@ -109,16 +109,15 @@ module.exports=function(grunt){
     },
     critical: {
       test: {
-          options: {
-              base: 'dist',
-              css: [
-                  'css/myown.css'
-              ],
-              width: 1170,
-              height: 500
-          },
-          src: 'dist/index.html',
-          dest: 'dist/critical.css'
+        options: {
+          base: './',
+          css: [
+            'css/bootstrap-grid.min.css',
+            'css/myown.css'
+          ],
+        },
+        src: 'index.html',
+        dest: 'dist/index-critical.html'
       }
     }
   });   
