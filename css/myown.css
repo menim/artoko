@@ -544,9 +544,10 @@ a[href^="#myModal"] {
     transform: scale(1);
     opacity: 0; } }
 
-.loading:before {
-  content: "";
+.lazyloading+.sk-rotating-plane {
   position: absolute;
+  background-color: gray;  
+  opacity: 1;
   z-index: 1;
   top: 50%;
   left: 50%;
