@@ -13,6 +13,7 @@ a:focus {
 
 iframe {
   border: 0;
+  width: 100%;
 }
 
 @font-face {
