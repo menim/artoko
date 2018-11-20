@@ -11,6 +11,12 @@
   "devDependencies": {
     "autoprefixer": "~1.0.20140110",
     "autoprefixer-core": "^6.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
     "grunt": "^1.0.3",
     "grunt-autoprefixer": "^3.0.4",
     "grunt-bower-install": "^1.5.0",
@@ -53,7 +59,9 @@
   },
   "main": "Gruntfile.js",
   "scripts": {
-    "prettier": "prettier --write js/*.js"
+    "lint": "eslint --debug js/myown.js",
+    "lint:write": "eslint --debug js/myown.js --fix",
+    "prettier": "prettier --write js/myown.js"
   },
   "author": "",
   "license": "ISC",

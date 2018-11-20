@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true,
+  },
+  "extends": ["airbnb"],
+  "plugins": ["prettier"],
+  "rules": {
+    "linebreak-style": "off",
+    "arrow-parens": "off",
+    "object-curly-newline": "off",
+    "no-mixed-operators": "off",
+    "arrow-body-style": "off",
+    "function-paren-newline": "off",
+    "no-plusplus": "off",
+    "space-before-function-paren": 0,
+
+    "no-console": "error",
+    "no-alert": "error",
+
+    "no-param-reassign": "off",
+    "radix": "off",
+
+    "prettier/prettier": ["error"],
+  }
+}
