@@ -1,6 +1,6 @@
 /* scroll to init */
 
-var scroll = new SmoothScroll(".nav-link");
+let scroll = new SmoothScroll(".nav-link");
 
 /* modal window init */
 
@@ -9,7 +9,7 @@ var modal = new VanillaModal.default();
 /* get all links that has Modal and if they have Modal in href property and 
        add to them event listener that when clicks initialize tiny slider  */
 
-var a = document.querySelectorAll("a");
+      var a = document.querySelectorAll("a");
 
 for (var j = 0; j < a.length; j++) {
   if (a[j].href.indexOf("Modal") !== -1) {
