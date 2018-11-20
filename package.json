@@ -52,7 +52,9 @@
     "node": ">=0.8.0"
   },
   "main": "Gruntfile.js",
-  "scripts": {},
+  "scripts": {
+    "prettier": "prettier --write js/*.js"
+  },
   "author": "",
   "license": "ISC",
   "directories": {
