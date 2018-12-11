@@ -1,127 +1,132 @@
-module.exports=function(grunt){
+module.exports = function(grunt) {
   grunt.initConfig({
-   pkg:grunt.file.readJSON('package.json'),
+    pkg: grunt.file.readJSON('package.json'),
     concat: {
       options: {
-        separator:';'
+        separator: ';',
       },
       dist: {
-        src:['js/tiny-slider.js','js/modal.js','js/smooth-scroll.polyfills.js','js/lazysizes.min.js','js/myown.js'],
-        dest:'dist/js/myown.js'
-      }
+        src: [
+          'js/tiny-slider.js',
+          'js/modal.js',
+          'js/smooth-scroll.polyfills.js',
+          'js/lazysizes.min.js',
+          'js/myown.js',
+        ],
+        dest: 'dist/js/myown.js',
+      },
     },
     uglify: {
       my_target: {
-        files:{
-          'dist/js/myown.js':['dist/js/myown.js']
-        }
-      }
+        files: {
+          'dist/js/myown.js': ['dist/js/myown.js'],
+        },
+      },
     },
     jshint: {
-      files:['js/myown.js'],
+      files: ['js/myown.js'],
       options: {
         globals: {
-          jQuery:true,
-          console:true,
-          module:true,
-          document:true
-        }
-      }
+          jQuery: true,
+          console: true,
+          module: true,
+          document: true,
+        },
+      },
     },
     htmlmin: {
       dist: {
         options: {
-          removeComments:true,
-          collapseWhitespace:true
+          removeComments: true,
+          collapseWhitespace: true,
         },
         files: {
-          'dist/index.html':'index.html'
-        }
-      }
+          'dist/index.html': 'index.html',
+        },
+      },
     },
     htmllint: {
-      all:['index.html']
+      all: ['index.html'],
     },
     csslint: {
-      src: ['css/myown.css']
+      src: ['css/myown.css'],
     },
     imageoptim: {
       myTask: {
         options: {
-          jpegMini:false,
-          imageAlpha:true,
-          quitAfter:true
+          jpegMini: false,
+          imageAlpha: true,
+          quitAfter: true,
         },
-        src: ['images']
-      }
+        src: ['images'],
+      },
     },
     cssmin: {
       target: {
         files: [
           {
-            src:'dist/css/myown.css',
-            dest:'dist/css/myown.css'
-          }
-        ]
-      }
+            src: 'dist/css/myown.css',
+            dest: 'dist/css/myown.css',
+          },
+        ],
+      },
     },
     concat_css: {
-      options: {
-      },
+      options: {},
       all: {
-        src: ["css/bootstrap-reboot.min.css","css/bootstrap-grid.min.css","css/modal.css","css/tiny-slider.css","css/myown.css"],
-        dest:"dist/css/myown.css"
-      }
+        src: [
+          'css/bootstrap-reboot.min.css',
+          'css/bootstrap-grid.min.css',
+          'css/modal.css","css/tiny-slider.css',
+          'css/myown.css',
+        ],
+        dest: 'dist/css/myown.css',
+      },
     },
     autoprefixer: {
       options: {
-      browsers: ['last 10 versions', 'ie 8', 'ie 9']
+        browsers: ['last 10 versions', 'ie 8', 'ie 9'],
+      },
+      dist: {
+        src: 'dist/css/myown.css',
+      },
     },
-    dist: {
-      src: 'dist/css/myown.css'
-    }
-  },
     watch: {
-      files: ['index.html','css/*.css','js/*.js'],
-      tasks: []
+      files: ['index.html', 'css/*.css', 'js/*.js'],
+      tasks: [],
     },
     browserSync: {
       dev: {
         bsFiles: {
-          src: [
-            'css/*.css',
-            'index.html']
+          src: ['css/*.css', 'index.html'],
         },
         options: {
           watchTask: true,
-          server: './'
-        }
-      }
+          server: './',
+        },
+      },
     },
     stylelint: {
       simple: {
         options: {
           configFile: './.stylelintrc.json',
-          format: 'css'
+          format: 'css',
         },
-        src:'css/myown.css'
-      }
+        src: 'css/myown.css',
+      },
     },
     critical: {
       test: {
         options: {
           base: './',
-          css: [
-            'css/bootstrap-grid.min.css',
-            'css/myown.css'
-          ],
+          css: ['css/bootstrap-grid.min.css', 'css/myown.css'],
         },
         src: 'index.html',
-        dest: 'dist/index-critical.html'
-      }
-    }
-  });   
-  grunt.loadNpmTasks('grunt-contrib-uglify'); 
+        dest: 'dist/index-critical.html',
+      },
+    },
+  });
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-concat-css');
@@ -135,6 +140,11 @@ module.exports=function(grunt){
   grunt.loadNpmTasks('grunt-html');
   grunt.loadNpmTasks('grunt-stylelint');
   grunt.loadNpmTasks('grunt-critical');
-  grunt.registerTask('ondev',['browserSync', 'watch']);
-  grunt.registerTask('onprod', ['concat_css','cssmin','autoprefixer','concat']);
+  grunt.registerTask('ondev', ['browserSync', 'watch']);
+  grunt.registerTask('onprod', [
+    'concat_css',
+    'cssmin',
+    'autoprefixer',
+    'concat',
+  ]);
 };
