@@ -1,6 +1,6 @@
 /* scroll to init */
 
-let scroll = new SmoothScroll(".nav-link");
+var scroll = new SmoothScroll(".nav-link");
 
 /* modal window init */
 
