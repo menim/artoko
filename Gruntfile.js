@@ -77,7 +77,8 @@ module.exports = function(grunt) {
         src: [
           'css/bootstrap-reboot.min.css',
           'css/bootstrap-grid.min.css',
-          'css/modal.css","css/tiny-slider.css',
+          'css/modal.css',
+          'css/tiny-slider.css',
           'css/myown.css',
         ],
         dest: 'dist/css/myown.css',
@@ -125,10 +126,24 @@ module.exports = function(grunt) {
         dest: 'dist/index-critical.html',
       },
     },
+    useminPrepare: {
+      html: 'index.html',
+      options: {
+        dest: 'dist',
+      },
+    },
+    usemin: { html: ['dist/index.html'] },
+    copy: {
+      task0: {
+        src: 'index.html',
+        dest: 'dist/index.html',
+      },
+    },
   });
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-concat-css');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
@@ -140,11 +155,16 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-html');
   grunt.loadNpmTasks('grunt-stylelint');
   grunt.loadNpmTasks('grunt-critical');
+  grunt.loadNpmTasks('grunt-usemin');
   grunt.registerTask('ondev', ['browserSync', 'watch']);
   grunt.registerTask('onprod', [
     'concat_css',
-    'cssmin',
-    'autoprefixer',
+    'copy:task0',
+    'useminPrepare',
     'concat',
+    'usemin',
+    'autoprefixer',
+    'cssmin',
+    'uglify',
   ]);
 };
