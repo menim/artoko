@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "declaration-block-no-important": true,
+    "property-blacklist": ["flex"],
+    "unit-blacklist": ["em,rem"],
+  },
+}

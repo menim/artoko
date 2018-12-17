@@ -4,7 +4,6 @@
   "dependencies": {
     "babel-loader": "^6.2.9",
     "babel-preset-es2015": "^6.18.0",
-    "csv": "~0.3.6",
     "postcss": "^6.0.2",
     "superagent": "^4.0.0"
   },
@@ -55,15 +54,34 @@
     "stylelint-order": "^2.0.0",
     "time-grunt": "^1.4.0"
   },
-  "engines": {
-    "node": ">=0.8.0"
-  },
-  "main": "Gruntfile.js",
   "scripts": {
     "lint": "eslint --debug js/myown.js",
     "lint:write": "eslint --debug js/myown.js --fix",
     "prettier": "prettier --write js/myown.js"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.css": [
+        "prettier --write",
+        "stylelint --fix --config ./.stylelintrc-format",
+        "git add"
+      ],
+      "*.js": [
+        "npm run prettier",
+        "npm run lint",
+        "git add"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "main": "Gruntfile.js",
   "author": "",
   "license": "ISC",
   "directories": {

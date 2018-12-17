@@ -1,0 +1,48 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-prettier", 
+  ],
+  "plugins": [
+    "stylelint-order", 
+  ],
+  "rules": {
+    "declaration-block-no-important": true,
+    "indentation": 2,
+    "rule-empty-line-before": "always",
+    "at-rule-empty-line-before": "always",
+    "property-blacklist": ["flex"],
+    "unit-blacklist": ["rem, em"],
+    "order/order": [
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "media",
+      },
+      {
+        "type": "rule",
+        "selector": "^$:\\w"
+      },
+      {
+        "type": "rule",
+        "selector": "^&:\\w"
+      },
+      {
+        "type": "rule",
+        "selector": "^&_"
+      },
+    ],
+    "order/properties-order": [
+      [
+        "position",
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ],
+      {
+        unspecified: "bottom"
+      }
+    ]
+  }
+}
