@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function Grunt(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     concat: {
@@ -20,17 +20,6 @@ module.exports = function(grunt) {
       my_target: {
         files: {
           'dist/js/myown.js': ['dist/js/myown.js'],
-        },
-      },
-    },
-    jshint: {
-      files: ['js/myown.js'],
-      options: {
-        globals: {
-          jQuery: true,
-          console: true,
-          module: true,
-          document: true,
         },
       },
     },
@@ -107,15 +96,6 @@ module.exports = function(grunt) {
         },
       },
     },
-    stylelint: {
-      simple: {
-        options: {
-          configFile: './.stylelintrc.json',
-          format: 'css',
-        },
-        src: 'css/myown.css',
-      },
-    },
     critical: {
       test: {
         options: {
@@ -140,8 +120,7 @@ module.exports = function(grunt) {
       },
     },
   });
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-uglify-es');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-concat-css');
@@ -150,10 +129,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-imageoptim');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
-  grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-html');
-  grunt.loadNpmTasks('grunt-stylelint');
   grunt.loadNpmTasks('grunt-critical');
   grunt.loadNpmTasks('grunt-usemin');
   grunt.registerTask('ondev', ['browserSync', 'watch']);
