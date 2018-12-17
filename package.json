@@ -39,7 +39,6 @@
     "grunt-html": "^8.0.0",
     "grunt-imageoptim": "~1.4.1",
     "grunt-postcss": "^0.8.0",
-    "grunt-rev": "~0.1.0",
     "grunt-scss-lint": "^0.5.0",
     "grunt-stylelint": "^0.5.0",
     "grunt-usemin": "^3.1.1",
