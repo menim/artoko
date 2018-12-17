@@ -60,7 +60,6 @@
   "lint-staged": {
     "linters": {
       "*.css": [
-        "prettier --write",
         "stylelint --fix --config ./.stylelintrc-format",
         "git add"
       ]
