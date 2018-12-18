@@ -78,7 +78,7 @@ module.exports = function Grunt(grunt) {
         browsers: ['last 10 versions', 'ie 8', 'ie 9'],
       },
       dist: {
-        src: 'dist/css/myown.css',
+        src: 'css/myown.css',
       },
     },
     watch: {
@@ -135,12 +135,12 @@ module.exports = function Grunt(grunt) {
   grunt.loadNpmTasks('grunt-usemin');
   grunt.registerTask('ondev', ['browserSync', 'watch']);
   grunt.registerTask('onprod', [
+    'autoprefixer',
     'concat_css',
     'copy:task0',
     'useminPrepare',
     'concat',
     'usemin',
-    'autoprefixer',
     'cssmin',
     'uglify',
   ]);
