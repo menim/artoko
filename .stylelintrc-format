@@ -7,7 +7,6 @@
     "stylelint-order", 
   ],
   "rules": {
-    "declaration-block-no-important": true,
     "indentation": 2,
     "rule-empty-line-before": "always",
     "at-rule-empty-line-before": "always",
