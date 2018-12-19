@@ -42,7 +42,7 @@
     "lint-staged": "^8.1.0",
     "load-grunt-tasks": "^4.0.0",
     "prettier": "^1.15.3",
-    "stylelint": "^7.0.3",
+    "stylelint": "^9.0.0",
     "stylelint-config-prettier": "^4.0.0",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-order": "^2.0.0"
@@ -58,7 +58,7 @@
     }
   },
   "lint-staged": {
-    "linters": { 
+    "linters": {
       "*.css": [
         "stylelint --fix --config ./.stylelintrc-format",
         "git add"
