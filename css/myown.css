@@ -1,9 +1,5 @@
 /*  this not accessble from keyboard fixed when will find answer */
 
-a:focus {
-  outline: 1px dotted blue;
-}
-
 iframe {
   border: 0;
   width: 100%;
@@ -12,7 +8,7 @@ iframe {
 a {
   font-size: .8rem;
   -webkit-transition: color 100ms ease-in;
-          transition: color 100ms ease-in;
+  transition: color 100ms ease-in;
 }
 
 a:hover,
@@ -20,19 +16,23 @@ a:focus {
   text-decoration: none;
 }
 
+a:focus {
+  outline: 1px dotted blue;
+}
+
 a[href^="#myModal"] {
-	display: inline-block;
-	position: relative;
+  position: relative;
+  display: inline-block;
 }
 
 @font-face {
   font-family: pt-sans;
   src: url(../fonts/PTS55F-webfont.eot);
   src: url(../fonts/PTS55F-webfont.eot?#iefix) format('embedded-opentype'), 
-  url(../fonts/PTS55F-webfont.woff2) format('woff2'),
-  url(../fonts/PTS55F-webfont.woff) format('woff'), 
-  url(../fonts/PTS55F-webfont.ttf) format('truetype'), 
-  url(../fonts/PTS55F-webfont.svg#pt_sansregular) format('svg');
+    url(../fonts/PTS55F-webfont.woff2) format('woff2'),
+    url(../fonts/PTS55F-webfont.woff) format('woff'), 
+    url(../fonts/PTS55F-webfont.ttf) format('truetype'), 
+    url(../fonts/PTS55F-webfont.svg#pt_sansregular) format('svg');
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -95,13 +95,13 @@ body {
 /* Navbar custom styles */
 
 .navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   align-items: center;
   display: flex;
-  left: 0;
   padding: 1em;
-  position: fixed;
-  right: 0;
-  top: 0;
   z-index: 2;
 }
 
@@ -144,41 +144,55 @@ body {
   color: #fff;
 }
 
-.navbar-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: middle;
-  content: "";
-  background-size: 100% 100%;
-}
-
 @media (max-width: 1050px) {
-  .collapse {
-    display: none;
+ 
+  .navbar-collapse {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 300ms ease-in, max-height 300ms ease-in;
   }
 
+  .navbar-collapse.is-open {
+    max-height: 500px;
+    opacity: 1;
+  }
+  
   .navbar {
     align-items: flex-start;
     flex-direction: column;
   }
 
-  .navbar-toggler {
-    border: 2px solid #b99d99;
-    border-radius: 3px;
-    background-color: transparent;
-    display: block;    
+  .navbar-toggler {    
     position: absolute;
     top: .7rem;
     right: 1rem;
+    border: 2px solid #b99d99;
+    border-radius: 3px;
+    background-color: transparent;
+    display: block;
     -webkit-align-self: flex-start;
-        -ms-flex-item-align: start;
-            align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
     padding: .25rem .75rem;
     font-size: 1.25rem;
     line-height: 1;
     background: 0 0;
+  }
+
+  .navbar-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    content: "";
+    display: inline-block;
+    height: 1.5em;
+    transition: transform 300ms ease-in;
+    vertical-align: middle;
+    width: 1.5em;
+  }
+
+  .close .navbar-icon {
+    transform: rotateZ(90deg);
   }
 
   .navbar-nav {
@@ -200,21 +214,22 @@ body {
 /* new icon component */
 
 .with-icon:before {
-  background-image:url('../images/new.svg');
-	content: '';
-  height: 40px;
   position: absolute;
-  right: -10px;
   top: -15px;
+  right: -10px;
+  background-image:url('../images/new.svg');
+  content: '';
+  height: 40px;
   width: 40px;
   z-index: 1;
 }
 
-@media(min-width: 500px) {
+@media (min-width: 500px) {
+
   .with-icon:before {
-    height: 50px;
-    right: -25px;
     top: -20px;
+    right: -25px;
+    height: 50px;
     width: 50px;
   }
 }
@@ -233,13 +248,13 @@ body {
 
 .bookshelf__cover {
   -webkit-transition: -webkit-transform 200ms linear;
-          transition: transform 200ms linear;
+  transition: transform 200ms linear;
 }
 
 .bookshelf__link:hover .bookshelf__cover {
   -webkit-transform: scale(1.04);
-      -ms-transform: scale(1.04);
-          transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
 }
 
 /* price component  */
@@ -268,6 +283,7 @@ body {
 }
 
 @media (min-width: 576px) {
+
   .youtube-item:last-child {
     margin-bottom: 20px;
   }
@@ -306,9 +322,9 @@ body {
 
 [data-modal-close] {
   position: absolute;
-  z-index: 2;
-  right: 10px;
   top: 3px;
+  right: 10px;
+  z-index: 2;
   line-height: 1;
   font-size: 2rem;
   cursor: pointer;
@@ -316,18 +332,20 @@ body {
 }
 
 @media (min-width: 767px) {
+
   .modal-header {
     font-size: 1.125rem;
     padding: 1em 2em;
   }
   
   [data-modal-close] {
-    font-size: 2.5rem;
     top: 15px;
+    font-size: 2.5rem;
   }
 }  
 
 @media (min-width: 992px) {
+
   .modal-lg {
     width: 800px;
   }
@@ -337,13 +355,13 @@ body {
 /* scroll to top component */
 
 .to-top-btn {
-  background: #723b33;
-  border: 1px solid #fff;
-  bottom: 20px;
-  display: block;
-  padding: 20px;
   position: fixed;
   right: 20px;
+  bottom: 20px;
+  background: #723b33;
+  border: 1px solid #fff;
+  display: block;
+  padding: 20px;
   width: auto;
   z-index: 90;
 }
@@ -357,7 +375,7 @@ body {
   width: 0; 
 }
 
-    /* delivery section */
+/* delivery section */
     
 .m-b-delivery {
   margin-bottom: 60px;
@@ -373,10 +391,10 @@ body {
 /* footer component */
 
 .footer {
+  position: relative;
   background-color: #723b33;
   font-size: 1rem;
   padding: 3em 0 0;
-  position: relative;
 }
 
 /* contact component */
@@ -437,6 +455,7 @@ body {
 }
 
 @media (min-width: 767px) {
+
   .form__item {
     margin-bottom: 2em;
   }
@@ -456,7 +475,7 @@ body {
   padding: 1em 2em .7em;
   text-transform: uppercase;
   -webkit-transition: all .5s;
-          transition: all .5s;
+  transition: all .5s;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -482,6 +501,7 @@ body {
 }
 
 @media (max-width: 400px) {
+
   .tns-outer img {
     height: auto;
     width: 100%;
@@ -490,6 +510,8 @@ body {
 
 .tns-controls [data-controls="next"],
 .tns-controls [data-controls="prev"] {
+  position: absolute;
+  top: 50%;
   background-color: transparent;
   border-bottom: 0;
   border-left: 0;
@@ -498,10 +520,22 @@ body {
   display: block;
   height: 25px;
   padding: 0;
-  position: absolute;
-  top: 50%;
   width: 25px;
   z-index: 100;
+}
+
+.tns-controls [data-controls="next"] {
+  right: 10px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.tns-controls [data-controls="prev"] {
+  left: 10px;
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
 }
 
 .tns-controls [data-controls="next"]:hover,
@@ -510,24 +544,11 @@ body {
   border-top-color:  #aaa;
 }
 
-.tns-controls [data-controls="next"] {
-  right: 10px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.tns-controls [data-controls="prev"] {
-  left: 10px;
-  -webkit-transform: rotate(225deg);
-      -ms-transform: rotate(225deg);
-          transform: rotate(225deg);
-}
-
 /* lazysizes placeholder images */
 
 
-  @keyframes scaleout {
+@keyframes scaleout {
+
   0% {
     transform: scale(0); }
 
@@ -537,18 +558,18 @@ body {
 
 .lazyloading+.sk-rotating-plane {
   position: absolute;
+  top: 50%;
+  left: 50%;
   background-color: gray;  
   opacity: 1;
   z-index: 1;
-  top: 50%;
-  left: 50%;
   margin-top: -16px;
   margin-left: -16px;
   width: 32px;
   height: 32px;
   border-radius: 32px;
   animation: scaleout 1.2s infinite ease-in-out;
- }
+}
 
 .lazyload,
 .lazyloading {
