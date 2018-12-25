@@ -11,7 +11,7 @@ module.exports = function Grunt(grunt) {
           'js/modal.js',
           'js/smooth-scroll.polyfills.js',
           'js/lazysizes.min.js',
-          'js/myown.js',
+          'dist/myown.js',
         ],
         dest: 'dist/js/myown.js',
       },
@@ -119,6 +119,16 @@ module.exports = function Grunt(grunt) {
         dest: 'dist/index.html',
       },
     },
+    babel: {
+      options: {
+        sourceMap: true,
+      },
+      dist: {
+        files: {
+          'dist/app.js': 'js/myown.js',
+        },
+      },
+    },
   });
   grunt.loadNpmTasks('grunt-contrib-uglify-es');
   grunt.loadNpmTasks('grunt-contrib-concat');
@@ -133,6 +143,7 @@ module.exports = function Grunt(grunt) {
   grunt.loadNpmTasks('grunt-html');
   grunt.loadNpmTasks('grunt-critical');
   grunt.loadNpmTasks('grunt-usemin');
+  grunt.loadNpmTasks('grunt-babel');
   grunt.registerTask('ondev', ['browserSync', 'watch']);
   grunt.registerTask('onprod', [
     'autoprefixer',
