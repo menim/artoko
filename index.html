@@ -1501,16 +1501,20 @@
         <div class="col-12 col-md-7 col-lg-6">
           <form action="contact.php" method="post" id="contact-form" class="form row">
             <div class="form__item col-12 col-lg-6">
-              <input type="text" class="form__input" name="field-name" value="" placeholder="Ім'я" id="contact-name" />
-              <label class="form__label icon-user access-visible" for="contact-name">Ім'я</label>
+              <label class="form__label icon-user" for="contact-name">Ім'я*</label>
+              <input type="text" class="form__input" name="field-name" value="" placeholder="Наприклад: Сергій" id="contact-name" />
             </div>
             <div class="form__item col-12 col-lg-6">
-              <input type="text" name="field-email" class="form__input" value="" placeholder="Email" id="contact-email"/>
-              <label class="input__label icon-email access-visible" for="contact-email">Email</label>
+              <label class="form__label icon-email" for="contact-email">Email*</label>
+              <input type="text" name="field-email" class="form__input" value="" placeholder="Наприклад: mel@gmail.com" id="contact-email"/>
             </div>
             <div class="form__item col-12">
+            <label for="contact-message" class="form__label">Телефон</label>
+            <input type="text" name="field-telephone" class="form__input" value="" placeholder="Наприклад: 0503642687" id="contact-telephone" />
+            </div>
+            <div class="form__item col-12">
+              <label for="contact-message" class="form__label">Повідомлення*</label>
               <textarea class="form__input form__input_textarea" name="field-message" placeholder="Вкажіть будь ласка що бажаєте купити" id="contact-message"></textarea>
-              <label for="contact-message" class="access-visible form__label">Повідомлення</label>
             </div>
             <button type="submit" id="contact-send" class="btn-primary form__btn-primary">Замовити</button>
           </form>
